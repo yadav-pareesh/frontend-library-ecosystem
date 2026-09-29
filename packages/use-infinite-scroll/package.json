@@ -1,0 +1,35 @@
+{
+  "name": "@pareesh/use-infinite-scroll",
+  "version": "1.0.0",
+  "description": "IntersectionObserver-based infinite scrolling hook for React with loadMore, cancellation, and rootMargin options.",
+  "author": "Pareesh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "directory": "packages/use-infinite-scroll"
+  },
+  "keywords": ["react", "hooks", "infinite-scroll", "intersection-observer", "pagination", "scroll"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@pareesh/internal-utils": "workspace:*"
+  }
+}

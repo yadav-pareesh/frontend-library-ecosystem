@@ -1,0 +1,35 @@
+{
+  "name": "@pareesh/use-element-size",
+  "version": "1.0.0",
+  "description": "High-performance ResizeObserver-based DOM element measurement hook for React with SSR safety and zero layout thrashing.",
+  "author": "Pareesh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "directory": "packages/use-element-size"
+  },
+  "keywords": ["react", "hooks", "resize-observer", "element-size", "dimensions", "width", "height"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@pareesh/internal-utils": "workspace:*"
+  }
+}

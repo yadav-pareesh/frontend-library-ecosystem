@@ -1,0 +1,35 @@
+{
+  "name": "@pareesh/use-debounced-value",
+  "version": "1.0.0",
+  "description": "High-performance, SSR-safe React hook for debouncing values and callbacks with leading/trailing execution, cancellation, and flushing.",
+  "author": "Pareesh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "directory": "packages/use-debounced-value"
+  },
+  "keywords": ["react", "hooks", "debounce", "debounced-value", "debounced-callback", "performance"],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "dependencies": {
+    "@pareesh/internal-utils": "workspace:*"
+  }
+}

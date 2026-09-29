@@ -1,0 +1,203 @@
+/* Stripe Documentation Design System */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Ubuntu, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Stripe Signature Light Palette (Default) */
+  --stripe-bg: #ffffff;
+  --stripe-bg-subtle: #f8fafc;
+  --stripe-bg-surface: #ffffff;
+  --stripe-sidebar-bg: #f8fafc;
+  --stripe-border: #e3e8ee;
+  --stripe-border-focus: #635bff;
+
+  /* Stripe Blurple & Brand Accents */
+  --primary: #635bff;
+  --primary-hover: #533afd;
+  --primary-light: rgba(99, 91, 255, 0.08);
+  --primary-border: rgba(99, 91, 255, 0.2);
+
+  /* Typography */
+  --text-head: #0a2540;
+  --text-body: #425466;
+  --text-muted: #697386;
+  --text-code: #e3e8ee;
+
+  /* Badges & Status */
+  --success: #059669;
+  --success-bg: rgba(5, 150, 105, 0.08);
+  --success-border: rgba(5, 150, 105, 0.2);
+  --warning: #d97706;
+  --warning-bg: rgba(217, 119, 6, 0.08);
+
+  /* Code Panel (Always dark & sleek like Stripe) */
+  --code-bg: #0a1628;
+  --code-header: #060e1b;
+  --code-border: #1a2942;
+  --code-text: #e2e8f0;
+  --code-comment: #64748b;
+  --code-keyword: #c084fc;
+  --code-fn: #38bdf8;
+  --code-str: #34d399;
+
+  --shadow-sm: 0 1px 3px rgba(50, 50, 93, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 14px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 13px 27px -5px rgba(50, 50, 93, 0.2), 0 8px 16px -8px rgba(0, 0, 0, 0.2);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+[data-theme='dark'] {
+  /* Stripe Dark Mode */
+  --stripe-bg: #0b1120;
+  --stripe-bg-subtle: #070c17;
+  --stripe-bg-surface: #111b2e;
+  --stripe-sidebar-bg: #0d1527;
+  --stripe-border: #1e293b;
+  --stripe-border-focus: #818cf8;
+
+  --primary: #818cf8;
+  --primary-hover: #6366f1;
+  --primary-light: rgba(129, 140, 248, 0.12);
+  --primary-border: rgba(129, 140, 248, 0.25);
+
+  --text-head: #f8fafc;
+  --text-body: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --success: #34d399;
+  --success-bg: rgba(52, 211, 153, 0.12);
+  --success-border: rgba(52, 211, 153, 0.25);
+
+  --code-bg: #070d18;
+  --code-header: #040810;
+  --code-border: #152238;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+section[id],
+[id] {
+  scroll-margin-top: 84px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--stripe-bg);
+  color: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.45);
+}
+
+/* Sidebar navigation item */
+.stripe-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: var(--text-body);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.stripe-nav-item:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.stripe-nav-item.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Stripe Callout box */
+.stripe-callout {
+  background-color: var(--primary-light);
+  border: 1px solid var(--primary-border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin-bottom: 24px;
+}
+
+/* Terminal code container */
+.stripe-code-card {
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* Command Palette Overlay */
+.cmd-palette-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 37, 64, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 14vh;
+  z-index: 200;
+}
+
+.cmd-palette-box {
+  background: var(--stripe-bg-surface);
+  border: 1px solid var(--stripe-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 620px;
+  overflow: hidden;
+  animation: cmdSlide 0.18s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cmdSlide {
+  from { opacity: 0; transform: translateY(-10px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}

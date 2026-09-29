@@ -1,0 +1,51 @@
+{
+  "name": "@pareesh/docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@pareesh/auto-ellipsis": "workspace:*",
+    "@pareesh/browser-storage": "workspace:*",
+    "@pareesh/file-validator": "workspace:*",
+    "@pareesh/form-dirty-state": "workspace:*",
+    "@pareesh/image-compressor": "workspace:*",
+    "@pareesh/image-dimensions": "workspace:*",
+    "@pareesh/react-confirm-action": "workspace:*",
+    "@pareesh/react-error-boundary-lite": "workspace:*",
+    "@pareesh/react-file-dropzone-lite": "workspace:*",
+    "@pareesh/react-shortcuts": "workspace:*",
+    "@pareesh/safe-json": "workspace:*",
+    "@pareesh/scroll-lock": "workspace:*",
+    "@pareesh/smart-search": "workspace:*",
+    "@pareesh/url-state": "workspace:*",
+    "@pareesh/use-copy-to-clipboard": "workspace:*",
+    "@pareesh/use-debounced-value": "workspace:*",
+    "@pareesh/use-element-size": "workspace:*",
+    "@pareesh/use-idle-detection": "workspace:*",
+    "@pareesh/use-infinite-scroll": "workspace:*",
+    "@pareesh/use-local-storage-state": "workspace:*",
+    "@pareesh/use-media-query": "workspace:*",
+    "@pareesh/use-network-status": "workspace:*",
+    "@pareesh/use-online-queue": "workspace:*",
+    "@pareesh/use-optimistic-action": "workspace:*",
+    "@pareesh/use-page-visibility": "workspace:*",
+    "@pareesh/use-permission": "workspace:*",
+    "@pareesh/use-persisted-state": "workspace:*",
+    "@pareesh/use-previous-value": "workspace:*",
+    "@pareesh/use-session-storage-state": "workspace:*",
+    "@pareesh/use-undo-redo": "workspace:*",
+    "@pareesh/use-value-history": "workspace:*",
+    "@pareesh/use-web-worker": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}

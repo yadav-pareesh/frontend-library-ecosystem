@@ -118,4 +118,4 @@ pnpm changeset publish
 
 ## 📄 License
 
-MIT © Pareesh
+MIT © Pareesh Yadav

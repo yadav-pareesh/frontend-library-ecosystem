@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/use-undo-redo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generic undo/redo state manager hook for React with past/future stacks, capacity limits, and zero unnecessary cloning.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-undo-redo"
   },
-  "keywords": ["react", "hooks", "undo", "redo", "history", "time-travel", "state"],
+  "keywords": [
+    "react",
+    "hooks",
+    "undo",
+    "redo",
+    "history",
+    "time-travel",
+    "state"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

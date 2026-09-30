@@ -1,6 +1,6 @@
 {
   "name": "@pareeshy/internal-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Internal utilities for @pareesh packages",
   "license": "MIT",
   "main": "./dist/index.cjs",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

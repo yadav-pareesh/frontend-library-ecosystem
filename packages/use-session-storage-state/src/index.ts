@@ -16,7 +16,7 @@ export interface SessionStorageControls {
   error: unknown | null;
 }
 
-const CUSTOM_SESSION_STORAGE_EVENT = 'pareesh:session-storage-change';
+const CUSTOM_SESSION_STORAGE_EVENT = 'pareeshy:session-storage-change';
 
 interface CustomSessionStorageDetail {
   key: string;

@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/use-value-history",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Configurable value history hook for React with max capacity, rollback, diff detection, and clear support.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-value-history"
   },
-  "keywords": ["react", "hooks", "history", "value-history", "audit", "state-history"],
+  "keywords": [
+    "react",
+    "hooks",
+    "history",
+    "value-history",
+    "audit",
+    "state-history"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

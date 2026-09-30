@@ -1,11 +1,11 @@
 /**
  * @pareeshy/internal-utils
- * Private shared utilities for @pareesh monorepo packages.
+ * Private shared utilities for @pareeshy monorepo packages.
  */
 
 export const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
 
-export function noop(): void {}
+export function noop(): void { }
 
 export function safeEventListener<K extends keyof WindowEventMap>(
   target: Window | Document | HTMLElement | null | undefined,
@@ -25,8 +25,8 @@ export function safeEventListener<K extends keyof WindowEventMap>(
 export function isPromise<T = unknown>(value: unknown): value is Promise<T> {
   return Boolean(
     value &&
-      (typeof value === 'object' || typeof value === 'function') &&
-      typeof (value as { then?: unknown }).then === 'function'
+    (typeof value === 'object' || typeof value === 'function') &&
+    typeof (value as { then?: unknown }).then === 'function'
   );
 }
 

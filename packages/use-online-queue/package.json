@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/use-online-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Offline-first persistent action queue for React with automatic retry, idempotency deduplication, and network-aware processing.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-online-queue"
   },
-  "keywords": ["react", "hooks", "offline", "queue", "retry", "idempotency", "sync"],
+  "keywords": [
+    "react",
+    "hooks",
+    "offline",
+    "queue",
+    "retry",
+    "idempotency",
+    "sync"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

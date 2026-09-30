@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/react-shortcuts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ergonomic keyboard shortcut manager for React with Mac/Windows 'mod' normalization, scoping, and conflict detection.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/react-shortcuts"
   },
-  "keywords": ["react", "shortcuts", "hotkeys", "keyboard", "keyboard-shortcuts", "keybindings"],
+  "keywords": [
+    "react",
+    "shortcuts",
+    "hotkeys",
+    "keyboard",
+    "keyboard-shortcuts",
+    "keybindings"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

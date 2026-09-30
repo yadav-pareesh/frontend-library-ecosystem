@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/use-web-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplify Web Worker usage in React with typed request/response communication, loading and error states, and automatic termination cleanup.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-web-worker"
   },
-  "keywords": ["react", "hooks", "web-worker", "worker", "threading", "background-tasks"],
+  "keywords": [
+    "react",
+    "hooks",
+    "web-worker",
+    "worker",
+    "threading",
+    "background-tasks"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

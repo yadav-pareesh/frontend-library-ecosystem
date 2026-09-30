@@ -68,7 +68,7 @@ describe('useLocalStorageState', () => {
 
     act(() => {
       window.dispatchEvent(
-        new CustomEvent('pareesh:local-storage-change', {
+        new CustomEvent('pareeshy:local-storage-change', {
           detail: { key: 'synced-key', newValue: JSON.stringify('synced-value') }
         })
       );

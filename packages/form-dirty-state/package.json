@@ -1,12 +1,12 @@
 {
   "name": "@pareeshy/form-dirty-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-performance dirty state detection hook for React forms with deep equality, reset control, and beforeunload prompt integration.",
   "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/form-dirty-state"
   },
   "keywords": [

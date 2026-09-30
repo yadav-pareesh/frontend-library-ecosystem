@@ -107,7 +107,7 @@ export function createWebStorageAdapter<T = unknown>(
 }
 
 export function createIndexedDBAdapter<T = unknown>(
-  dbName = 'pareesh-storage',
+  dbName = 'pareeshy-storage',
   storeName = 'keyval'
 ): StorageAdapter<T> {
   if (!isBrowser || typeof indexedDB === 'undefined') {

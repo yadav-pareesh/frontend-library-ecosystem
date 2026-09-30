@@ -1,13 +1,13 @@
-# @pareesh/use-web-worker
+# @pareeshy/use-web-worker
 
 Simplify Web Worker usage in React with typed request/response communication, loading and error states, and automatic termination cleanup.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-web-worker
+npm install @pareeshy/use-web-worker
 # or
-pnpm add @pareesh/use-web-worker
+pnpm add @pareeshy/use-web-worker
 ```
 
 ## Quick Start
@@ -16,7 +16,7 @@ pnpm add @pareesh/use-web-worker
 
 ```tsx
 import React, { useState } from 'react';
-import { useWebWorker } from '@pareesh/use-web-worker';
+import { useWebWorker } from '@pareeshy/use-web-worker';
 
 // Expensive prime-checking algorithm offloaded to background thread
 function computePrimes(count: number): number[] {

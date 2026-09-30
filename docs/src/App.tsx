@@ -13,38 +13,38 @@ const CATEGORY_ORDER = [
 ] as const;
 
 const PACKAGE_ICONS: Record<string, string> = {
-  '@pareesh/use-debounced-value': '⏱️',
-  '@pareesh/use-local-storage-state': '💾',
-  '@pareesh/use-session-storage-state': '🗂️',
-  '@pareesh/use-network-status': '📶',
-  '@pareesh/use-online-queue': '🔄',
-  '@pareesh/use-idle-detection': '💤',
-  '@pareesh/use-page-visibility': '👁️',
-  '@pareesh/use-copy-to-clipboard': '📋',
-  '@pareesh/use-media-query': '📱',
-  '@pareesh/use-element-size': '📐',
-  '@pareesh/use-optimistic-action': '⚡',
-  '@pareesh/use-persisted-state': '🗄️',
-  '@pareesh/use-infinite-scroll': '📜',
-  '@pareesh/use-previous-value': '⏪',
-  '@pareesh/use-value-history': '📊',
-  '@pareesh/use-permission': '🛡️',
-  '@pareesh/use-web-worker': '⚙️',
-  '@pareesh/use-undo-redo': '↩️',
-  '@pareesh/auto-ellipsis': '✂️',
-  '@pareesh/smart-search': '🔍',
-  '@pareesh/file-validator': '📁',
-  '@pareesh/image-compressor': '🗜️',
-  '@pareesh/image-dimensions': '🖼️',
-  '@pareesh/browser-storage': '🗃️',
-  '@pareesh/safe-json': '🔒',
-  '@pareesh/url-state': '🔗',
-  '@pareesh/form-dirty-state': '📝',
-  '@pareesh/scroll-lock': '🔒',
-  '@pareesh/react-confirm-action': '❓',
-  '@pareesh/react-shortcuts': '⌨️',
-  '@pareesh/react-error-boundary-lite': '🛡️',
-  '@pareesh/react-file-dropzone-lite': '📥'
+  '@pareeshy/use-debounced-value': '⏱️',
+  '@pareeshy/use-local-storage-state': '💾',
+  '@pareeshy/use-session-storage-state': '🗂️',
+  '@pareeshy/use-network-status': '📶',
+  '@pareeshy/use-online-queue': '🔄',
+  '@pareeshy/use-idle-detection': '💤',
+  '@pareeshy/use-page-visibility': '👁️',
+  '@pareeshy/use-copy-to-clipboard': '📋',
+  '@pareeshy/use-media-query': '📱',
+  '@pareeshy/use-element-size': '📐',
+  '@pareeshy/use-optimistic-action': '⚡',
+  '@pareeshy/use-persisted-state': '🗄️',
+  '@pareeshy/use-infinite-scroll': '📜',
+  '@pareeshy/use-previous-value': '⏪',
+  '@pareeshy/use-value-history': '📊',
+  '@pareeshy/use-permission': '🛡️',
+  '@pareeshy/use-web-worker': '⚙️',
+  '@pareeshy/use-undo-redo': '↩️',
+  '@pareeshy/auto-ellipsis': '✂️',
+  '@pareeshy/smart-search': '🔍',
+  '@pareeshy/file-validator': '📁',
+  '@pareeshy/image-compressor': '🗜️',
+  '@pareeshy/image-dimensions': '🖼️',
+  '@pareeshy/browser-storage': '🗃️',
+  '@pareeshy/safe-json': '🔒',
+  '@pareeshy/url-state': '🔗',
+  '@pareeshy/form-dirty-state': '📝',
+  '@pareeshy/scroll-lock': '🔒',
+  '@pareeshy/react-confirm-action': '❓',
+  '@pareeshy/react-shortcuts': '⌨️',
+  '@pareeshy/react-error-boundary-lite': '🛡️',
+  '@pareeshy/react-file-dropzone-lite': '📥'
 };
 
 type PackageManager = 'pnpm' | 'npm' | 'yarn' | 'bun';
@@ -241,7 +241,7 @@ export function App() {
                 P
               </div>
               <span style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-head)', letterSpacing: '-0.02em' }}>
-                @pareesh
+                @pareeshy
               </span>
               <span
                 style={{
@@ -264,7 +264,7 @@ export function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: '0.85rem' }}>
               <span style={{ color: 'var(--text-muted)' }}>{activePackage.category}</span>
               <span style={{ color: 'var(--text-muted)' }}>/</span>
-              <span style={{ color: 'var(--text-head)', fontWeight: 600 }}>{activePackage.name.replace('@pareesh/', '')}</span>
+              <span style={{ color: 'var(--text-head)', fontWeight: 600 }}>{activePackage.name.replace('@pareeshy/', '')}</span>
             </div>
           </div>
 
@@ -423,7 +423,7 @@ export function App() {
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, overflow: 'hidden' }}>
                         <span style={{ fontSize: '0.9rem' }}>{icon}</span>
                         <span style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
-                          {pkg.name.replace('@pareesh/', '')}
+                          {pkg.name.replace('@pareeshy/', '')}
                         </span>
                       </div>
                       <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
@@ -444,7 +444,7 @@ export function App() {
           {/* Header Title & Badges */}
           <div style={{ marginBottom: 20 }}>
             <span style={{ fontSize: '0.85rem', color: 'var(--primary)', fontWeight: 600, fontFamily: 'var(--font-mono)' }}>
-              @pareesh /
+              @pareeshy /
             </span>
             <h1
               style={{
@@ -457,7 +457,7 @@ export function App() {
                 marginBottom: 14
               }}
             >
-              {activePackage.name.replace('@pareesh/', '')}
+              {activePackage.name.replace('@pareeshy/', '')}
             </h1>
 
             {/* Metadata Pills */}
@@ -719,7 +719,7 @@ export function App() {
                   transition: 'all 0.15s ease'
                 }}
               >
-                ← Previous ({prevPackage.name.replace('@pareesh/', '')})
+                ← Previous ({prevPackage.name.replace('@pareeshy/', '')})
               </button>
             ) : <div />}
 
@@ -742,7 +742,7 @@ export function App() {
                   boxShadow: '0 2px 8px rgba(99, 91, 255, 0.25)'
                 }}
               >
-                Next ({nextPackage.name.replace('@pareesh/', '')}) →
+                Next ({nextPackage.name.replace('@pareeshy/', '')}) →
               </button>
             )}
           </div>

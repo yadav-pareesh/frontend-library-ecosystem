@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface UseInfiniteScrollOptions {
   /** Async or sync callback to load the next batch of items. */

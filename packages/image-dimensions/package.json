@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/image-dimensions",
+  "name": "@pareeshy/image-dimensions",
   "version": "1.0.0",
   "description": "Safe, lightweight image dimensions extractor for File, Blob, and image URL inputs in browsers with aspect ratio calculations.",
   "author": "Pareesh",
@@ -27,6 +27,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useSmartSearch, highlightMatches } from '@pareesh/smart-search';
-import { useDebouncedValue } from '@pareesh/use-debounced-value';
+import { useSmartSearch, highlightMatches } from '@pareeshy/smart-search';
+import { useDebouncedValue } from '@pareeshy/use-debounced-value';
 
 const products = [
   { id: '1', name: 'Wireless Noise-Canceling Headphones', category: 'Audio', price: 299 },

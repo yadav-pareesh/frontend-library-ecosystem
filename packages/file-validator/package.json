@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/file-validator",
+  "name": "@pareeshy/file-validator",
   "version": "1.0.0",
   "description": "Comprehensive client-side file validation library supporting MIME types, magic bytes detection, size limits, image dimensions, and detailed error reports.",
   "author": "Pareesh",
@@ -27,6 +27,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

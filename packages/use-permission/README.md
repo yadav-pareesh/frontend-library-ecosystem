@@ -1,20 +1,20 @@
-# @pareesh/use-permission
+# @pareeshy/use-permission
 
 Browser Permissions API abstraction hook for React supporting camera, microphone, geolocation, notifications, and clipboard with graceful degradation.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-permission
+npm install @pareeshy/use-permission
 # or
-pnpm add @pareesh/use-permission
+pnpm add @pareeshy/use-permission
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { usePermission } from '@pareesh/use-permission';
+import { usePermission } from '@pareeshy/use-permission';
 
 export function GeolocationWidget() {
   const { state, isSupported, isLoading } = usePermission('geolocation');

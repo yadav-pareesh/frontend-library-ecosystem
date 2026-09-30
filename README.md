@@ -5,11 +5,11 @@
 Consumers install only the exact packages they need:
 
 ```bash
-npm install @pareesh/use-debounced-value
+npm install @pareeshy/use-debounced-value
 # or
-npm install @pareesh/auto-ellipsis
+npm install @pareeshy/auto-ellipsis
 # or
-npm install @pareesh/smart-search
+npm install @pareeshy/smart-search
 ```
 
 ---
@@ -18,38 +18,38 @@ npm install @pareesh/smart-search
 
 | Package | Category | Purpose | Framework | Browser-Only? | Runtime Deps | Bundle Size | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [`@pareesh/use-debounced-value`](./packages/use-debounced-value) | React Hooks | Debounce values & callbacks with flush/cancel | React >=18 | No (SSR Safe) | 0 | 1.2 KB | Stable |
-| [`@pareesh/use-local-storage-state`](./packages/use-local-storage-state) | State Management | Reactive localStorage with cross-tab sync | React >=18 | No (SSR Safe) | 0 | 1.4 KB | Stable |
-| [`@pareesh/use-session-storage-state`](./packages/use-session-storage-state) | State Management | Reactive sessionStorage with error guards | React >=18 | No (SSR Safe) | 0 | 1.3 KB | Stable |
-| [`@pareesh/use-network-status`](./packages/use-network-status) | Browser APIs | Detect online/offline, speed, and RTT | React >=18 | Yes | 0 | 0.9 KB | Stable |
-| [`@pareesh/use-online-queue`](./packages/use-online-queue) | Performance | Offline-first persistent retry action queue | React >=18 | Yes | 0 | 1.8 KB | Stable |
-| [`@pareesh/use-idle-detection`](./packages/use-idle-detection) | Browser APIs | Track user inactivity across all DOM events | React >=18 | Yes | 0 | 1.3 KB | Stable |
-| [`@pareesh/use-page-visibility`](./packages/use-page-visibility) | Browser APIs | Reactive document visibility state | React >=18 | No (SSR Safe) | 0 | 0.6 KB | Stable |
-| [`@pareesh/use-copy-to-clipboard`](./packages/use-copy-to-clipboard) | Browser APIs | Copy text to clipboard with fallback | React >=18 | Yes | 0 | 1.1 KB | Stable |
-| [`@pareesh/use-media-query`](./packages/use-media-query) | React Hooks | SSR-safe reactive media queries | React >=18 | No (SSR Safe) | 0 | 0.8 KB | Stable |
-| [`@pareesh/use-element-size`](./packages/use-element-size) | UI Utilities | ResizeObserver element measurement | React >=18 | Yes | 0 | 1.2 KB | Stable |
-| [`@pareesh/use-optimistic-action`](./packages/use-optimistic-action) | State Management | Reusable optimistic UI with rollback | React >=18 | No (SSR Safe) | 0 | 1.4 KB | Stable |
-| [`@pareesh/use-persisted-state`](./packages/use-persisted-state) | State Management | Persisted state with TTL & migrations | React >=18 | No (SSR Safe) | 0 | 1.6 KB | Stable |
-| [`@pareesh/use-infinite-scroll`](./packages/use-infinite-scroll) | Performance | IntersectionObserver-based infinite scroll | React >=18 | Yes | 0 | 1.1 KB | Stable |
-| [`@pareesh/use-previous-value`](./packages/use-previous-value) | React Hooks | Track previous values with custom equality | React >=18 | No (SSR Safe) | 0 | 0.4 KB | Stable |
-| [`@pareesh/use-value-history`](./packages/use-value-history) | React Hooks | Historical audit log with capacity bounds | React >=18 | No (SSR Safe) | 0 | 0.9 KB | Stable |
-| [`@pareesh/use-permission`](./packages/use-permission) | Browser APIs | Browser Permissions API abstraction | React >=18 | Yes | 0 | 1.0 KB | Stable |
-| [`@pareesh/use-web-worker`](./packages/use-web-worker) | Performance | Typed Web Worker background execution | React >=18 | Yes | 0 | 1.5 KB | Stable |
-| [`@pareesh/use-undo-redo`](./packages/use-undo-redo) | State Management | Undo/redo manager with zero extra clones | React >=18 | No (SSR Safe) | 0 | 1.3 KB | Stable |
-| [`@pareesh/auto-ellipsis`](./packages/auto-ellipsis) | UI Utilities | Multi-line text truncation with ResizeObserver | React >=18 | Yes | 0 | 1.7 KB | Stable |
-| [`@pareesh/smart-search`](./packages/smart-search) | Search & Data | Client-side fuzzy search with highlighting | Agnostic / React | No (SSR Safe) | 0 | 1.8 KB | Stable |
-| [`@pareesh/file-validator`](./packages/file-validator) | Files & Images | MIME, magic bytes, dimensions validator | Agnostic | Yes | 0 | 2.2 KB | Stable |
-| [`@pareesh/image-compressor`](./packages/image-compressor) | Files & Images | Client-side JPEG/PNG/WebP compressor | Agnostic | Yes | 0 | 1.9 KB | Stable |
-| [`@pareesh/image-dimensions`](./packages/image-dimensions) | Files & Images | Safe image dimension & aspect extractor | Agnostic | Yes | 0 | 0.8 KB | Stable |
-| [`@pareesh/browser-storage`](./packages/browser-storage) | State Management | Unified localStorage, session & IndexedDB | Agnostic | Yes | 0 | 2.1 KB | Stable |
-| [`@pareesh/safe-json`](./packages/safe-json) | Developer Experience | Safe JSON parse/stringify with circular fix | Agnostic | No (SSR Safe) | 0 | 0.7 KB | Stable |
-| [`@pareesh/url-state`](./packages/url-state) | State Management | React state sync with URL query params | React >=18 | No (SSR Safe) | 0 | 1.5 KB | Stable |
-| [`@pareesh/form-dirty-state`](./packages/form-dirty-state) | UI Utilities | Form dirty state detection with diffing | React >=18 | No (SSR Safe) | 0 | 1.2 KB | Stable |
-| [`@pareesh/scroll-lock`](./packages/scroll-lock) | UI Utilities | Scroll lock with scrollbar compensation | Agnostic / React | Yes | 0 | 1.0 KB | Stable |
-| [`@pareesh/react-confirm-action`](./packages/react-confirm-action) | UI Utilities | Accessible Promise-based confirm dialog | React >=18 | No (SSR Safe) | 0 | 1.6 KB | Stable |
-| [`@pareesh/react-shortcuts`](./packages/react-shortcuts) | Developer Experience | Keyboard shortcut manager with Mod key | React >=18 | Yes | 0 | 1.4 KB | Stable |
-| [`@pareesh/react-error-boundary-lite`](./packages/react-error-boundary-lite) | Developer Experience | Lightweight Error Boundary with resetKeys | React >=18 | No (SSR Safe) | 0 | 1.1 KB | Stable |
-| [`@pareesh/react-file-dropzone-lite`](./packages/react-file-dropzone-lite) | UI Utilities | Drag-and-drop file upload zone hook | React >=18 | Yes | 0 | 1.7 KB | Stable |
+| [`@pareeshy/use-debounced-value`](./packages/use-debounced-value) | React Hooks | Debounce values & callbacks with flush/cancel | React >=18 | No (SSR Safe) | 0 | 1.2 KB | Stable |
+| [`@pareeshy/use-local-storage-state`](./packages/use-local-storage-state) | State Management | Reactive localStorage with cross-tab sync | React >=18 | No (SSR Safe) | 0 | 1.4 KB | Stable |
+| [`@pareeshy/use-session-storage-state`](./packages/use-session-storage-state) | State Management | Reactive sessionStorage with error guards | React >=18 | No (SSR Safe) | 0 | 1.3 KB | Stable |
+| [`@pareeshy/use-network-status`](./packages/use-network-status) | Browser APIs | Detect online/offline, speed, and RTT | React >=18 | Yes | 0 | 0.9 KB | Stable |
+| [`@pareeshy/use-online-queue`](./packages/use-online-queue) | Performance | Offline-first persistent retry action queue | React >=18 | Yes | 0 | 1.8 KB | Stable |
+| [`@pareeshy/use-idle-detection`](./packages/use-idle-detection) | Browser APIs | Track user inactivity across all DOM events | React >=18 | Yes | 0 | 1.3 KB | Stable |
+| [`@pareeshy/use-page-visibility`](./packages/use-page-visibility) | Browser APIs | Reactive document visibility state | React >=18 | No (SSR Safe) | 0 | 0.6 KB | Stable |
+| [`@pareeshy/use-copy-to-clipboard`](./packages/use-copy-to-clipboard) | Browser APIs | Copy text to clipboard with fallback | React >=18 | Yes | 0 | 1.1 KB | Stable |
+| [`@pareeshy/use-media-query`](./packages/use-media-query) | React Hooks | SSR-safe reactive media queries | React >=18 | No (SSR Safe) | 0 | 0.8 KB | Stable |
+| [`@pareeshy/use-element-size`](./packages/use-element-size) | UI Utilities | ResizeObserver element measurement | React >=18 | Yes | 0 | 1.2 KB | Stable |
+| [`@pareeshy/use-optimistic-action`](./packages/use-optimistic-action) | State Management | Reusable optimistic UI with rollback | React >=18 | No (SSR Safe) | 0 | 1.4 KB | Stable |
+| [`@pareeshy/use-persisted-state`](./packages/use-persisted-state) | State Management | Persisted state with TTL & migrations | React >=18 | No (SSR Safe) | 0 | 1.6 KB | Stable |
+| [`@pareeshy/use-infinite-scroll`](./packages/use-infinite-scroll) | Performance | IntersectionObserver-based infinite scroll | React >=18 | Yes | 0 | 1.1 KB | Stable |
+| [`@pareeshy/use-previous-value`](./packages/use-previous-value) | React Hooks | Track previous values with custom equality | React >=18 | No (SSR Safe) | 0 | 0.4 KB | Stable |
+| [`@pareeshy/use-value-history`](./packages/use-value-history) | React Hooks | Historical audit log with capacity bounds | React >=18 | No (SSR Safe) | 0 | 0.9 KB | Stable |
+| [`@pareeshy/use-permission`](./packages/use-permission) | Browser APIs | Browser Permissions API abstraction | React >=18 | Yes | 0 | 1.0 KB | Stable |
+| [`@pareeshy/use-web-worker`](./packages/use-web-worker) | Performance | Typed Web Worker background execution | React >=18 | Yes | 0 | 1.5 KB | Stable |
+| [`@pareeshy/use-undo-redo`](./packages/use-undo-redo) | State Management | Undo/redo manager with zero extra clones | React >=18 | No (SSR Safe) | 0 | 1.3 KB | Stable |
+| [`@pareeshy/auto-ellipsis`](./packages/auto-ellipsis) | UI Utilities | Multi-line text truncation with ResizeObserver | React >=18 | Yes | 0 | 1.7 KB | Stable |
+| [`@pareeshy/smart-search`](./packages/smart-search) | Search & Data | Client-side fuzzy search with highlighting | Agnostic / React | No (SSR Safe) | 0 | 1.8 KB | Stable |
+| [`@pareeshy/file-validator`](./packages/file-validator) | Files & Images | MIME, magic bytes, dimensions validator | Agnostic | Yes | 0 | 2.2 KB | Stable |
+| [`@pareeshy/image-compressor`](./packages/image-compressor) | Files & Images | Client-side JPEG/PNG/WebP compressor | Agnostic | Yes | 0 | 1.9 KB | Stable |
+| [`@pareeshy/image-dimensions`](./packages/image-dimensions) | Files & Images | Safe image dimension & aspect extractor | Agnostic | Yes | 0 | 0.8 KB | Stable |
+| [`@pareeshy/browser-storage`](./packages/browser-storage) | State Management | Unified localStorage, session & IndexedDB | Agnostic | Yes | 0 | 2.1 KB | Stable |
+| [`@pareeshy/safe-json`](./packages/safe-json) | Developer Experience | Safe JSON parse/stringify with circular fix | Agnostic | No (SSR Safe) | 0 | 0.7 KB | Stable |
+| [`@pareeshy/url-state`](./packages/url-state) | State Management | React state sync with URL query params | React >=18 | No (SSR Safe) | 0 | 1.5 KB | Stable |
+| [`@pareeshy/form-dirty-state`](./packages/form-dirty-state) | UI Utilities | Form dirty state detection with diffing | React >=18 | No (SSR Safe) | 0 | 1.2 KB | Stable |
+| [`@pareeshy/scroll-lock`](./packages/scroll-lock) | UI Utilities | Scroll lock with scrollbar compensation | Agnostic / React | Yes | 0 | 1.0 KB | Stable |
+| [`@pareeshy/react-confirm-action`](./packages/react-confirm-action) | UI Utilities | Accessible Promise-based confirm dialog | React >=18 | No (SSR Safe) | 0 | 1.6 KB | Stable |
+| [`@pareeshy/react-shortcuts`](./packages/react-shortcuts) | Developer Experience | Keyboard shortcut manager with Mod key | React >=18 | Yes | 0 | 1.4 KB | Stable |
+| [`@pareeshy/react-error-boundary-lite`](./packages/react-error-boundary-lite) | Developer Experience | Lightweight Error Boundary with resetKeys | React >=18 | No (SSR Safe) | 0 | 1.1 KB | Stable |
+| [`@pareeshy/react-file-dropzone-lite`](./packages/react-file-dropzone-lite) | UI Utilities | Drag-and-drop file upload zone hook | React >=18 | Yes | 0 | 1.7 KB | Stable |
 
 ---
 

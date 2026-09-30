@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useShortcut } from '@pareesh/react-shortcuts';
+import { useShortcut } from '@pareeshy/react-shortcuts';
 
 export function ShortcutsPlayground() {
   const [log, setLog] = useState<string[]>([]);

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { isBrowser, isDeepEqual } from '@pareesh/internal-utils';
+import { isBrowser, isDeepEqual } from '@pareeshy/internal-utils';
 
 export interface UseFormDirtyStateOptions<T> {
   /** Custom comparison function. Defaults to deep equality. */

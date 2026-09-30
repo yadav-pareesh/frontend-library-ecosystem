@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/image-compressor",
+  "name": "@pareeshy/image-compressor",
   "version": "1.0.0",
   "description": "High-performance client-side image compression library supporting JPEG, PNG, and WebP with dimension resizing and Blob/File output.",
   "author": "Pareesh",
@@ -27,6 +27,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

@@ -1,20 +1,20 @@
-# @pareesh/react-file-dropzone-lite
+# @pareeshy/react-file-dropzone-lite
 
 Lightweight, headless drag-and-drop file upload zone hook and component for React with full keyboard navigation and validation support.
 
 ## Installation
 
 ```bash
-npm install @pareesh/react-file-dropzone-lite
+npm install @pareeshy/react-file-dropzone-lite
 # or
-pnpm add @pareesh/react-file-dropzone-lite
+pnpm add @pareeshy/react-file-dropzone-lite
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useFileDropzone } from '@pareesh/react-file-dropzone-lite';
+import { useFileDropzone } from '@pareeshy/react-file-dropzone-lite';
 
 export function FileUploader() {
   const [files, setFiles] = useState<File[]>([]);

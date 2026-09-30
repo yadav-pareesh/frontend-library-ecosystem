@@ -1,20 +1,20 @@
-# @pareesh/use-infinite-scroll
+# @pareeshy/use-infinite-scroll
 
 IntersectionObserver-based infinite scrolling hook for React with loadMore, cancellation, and rootMargin options.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-infinite-scroll
+npm install @pareeshy/use-infinite-scroll
 # or
-pnpm add @pareesh/use-infinite-scroll
+pnpm add @pareeshy/use-infinite-scroll
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useInfiniteScroll } from '@pareesh/use-infinite-scroll';
+import { useInfiniteScroll } from '@pareeshy/use-infinite-scroll';
 
 export function ItemFeed() {
   const [items, setItems] = useState([1, 2, 3]);

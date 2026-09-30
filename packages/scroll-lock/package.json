@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/scroll-lock",
+  "name": "@pareeshy/scroll-lock",
   "version": "1.0.0",
   "description": "Reliable scroll locking library and React hook with scrollbar shift compensation, nested locks support, iOS touch handling, and clean restoration.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-idle-detection",
+  "name": "@pareeshy/use-idle-detection",
   "version": "1.0.0",
   "description": "User inactivity detection hook for React supporting mouse, keyboard, touch, scroll, pointer, and visibility changes with configurable timeout.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

@@ -23,7 +23,7 @@ export interface PackageInfo {
 
 export const PACKAGES_DATA: PackageInfo[] = [
   {
-    name: '@pareesh/use-debounced-value',
+    name: '@pareeshy/use-debounced-value',
     category: 'React Hooks',
     purpose: 'Delays updating a value or calling a function until the user stops typing or interacting.',
     description:
@@ -39,7 +39,7 @@ export const PACKAGES_DATA: PackageInfo[] = [
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React, { useState, useEffect } from 'react';
-import { useDebouncedValue } from '@pareesh/use-debounced-value';
+import { useDebouncedValue } from '@pareeshy/use-debounced-value';
 
 export function SearchBox() {
   const [text, setText] = useState('');
@@ -70,7 +70,7 @@ export function SearchBox() {
     apiSummary: 'useDebouncedValue(val, delay, { leading?, trailing?, maxWait? }), useDebouncedCallback(fn, delay, opts)'
   },
   {
-    name: '@pareesh/use-local-storage-state',
+    name: '@pareeshy/use-local-storage-state',
     category: 'State Management',
     purpose: 'Stores state in the browser\'s localStorage so data persists across reloads and syncs across tabs.',
     description:
@@ -86,7 +86,7 @@ export function SearchBox() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useLocalStorageState } from '@pareesh/use-local-storage-state';
+import { useLocalStorageState } from '@pareeshy/use-local-storage-state';
 
 export function ThemeSwitcher() {
   // Saved in localStorage under the key 'app_theme', defaults to 'light'
@@ -105,7 +105,7 @@ export function ThemeSwitcher() {
     apiSummary: 'useLocalStorageState<T>(key, defaultVal, { serializer?, syncTabs?, onError? })'
   },
   {
-    name: '@pareesh/use-session-storage-state',
+    name: '@pareeshy/use-session-storage-state',
     category: 'State Management',
     purpose: 'Stores state for the current tab that clears automatically when the tab is closed.',
     description:
@@ -121,7 +121,7 @@ export function ThemeSwitcher() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useSessionStorageState } from '@pareesh/use-session-storage-state';
+import { useSessionStorageState } from '@pareeshy/use-session-storage-state';
 
 export function CheckoutWizard() {
   // Survives page refresh, but resets when tab closes
@@ -138,7 +138,7 @@ export function CheckoutWizard() {
     apiSummary: 'useSessionStorageState<T>(key, defaultVal, { serializer?, onError? })'
   },
   {
-    name: '@pareesh/use-network-status',
+    name: '@pareeshy/use-network-status',
     category: 'Browser APIs',
     purpose: 'Detects whether the user is online or offline, and monitors connection speed (4G, 3G, WiFi).',
     description:
@@ -154,7 +154,7 @@ export function CheckoutWizard() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useNetworkStatus } from '@pareesh/use-network-status';
+import { useNetworkStatus } from '@pareeshy/use-network-status';
 
 export function NetworkBanner() {
   const { online, effectiveType, downlink } = useNetworkStatus();
@@ -176,7 +176,7 @@ export function NetworkBanner() {
     apiSummary: 'useNetworkStatus(): { online: boolean, effectiveType: string, downlink: number, rtt: number }'
   },
   {
-    name: '@pareesh/use-online-queue',
+    name: '@pareeshy/use-online-queue',
     category: 'Performance',
     purpose: 'Queues actions while offline and automatically executes them with retries when back online.',
     description:
@@ -192,7 +192,7 @@ export function NetworkBanner() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useOnlineQueue } from '@pareesh/use-online-queue';
+import { useOnlineQueue } from '@pareeshy/use-online-queue';
 
 export function NoteCreator() {
   const { enqueue, items, isProcessing } = useOnlineQueue<{ id: string; text: string }>({
@@ -215,7 +215,7 @@ export function NoteCreator() {
     apiSummary: 'useOnlineQueue<T>({ onProcess, maxRetries?, retryDelayMs?, storageKey? })'
   },
   {
-    name: '@pareesh/use-idle-detection',
+    name: '@pareeshy/use-idle-detection',
     category: 'Browser APIs',
     purpose: 'Detects when the user is inactive (no mouse, typing, or touch) for a configured duration.',
     description:
@@ -231,7 +231,7 @@ export function NoteCreator() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useIdleDetection } from '@pareesh/use-idle-detection';
+import { useIdleDetection } from '@pareeshy/use-idle-detection';
 
 export function SecurityGuard() {
   const { isIdle, reset } = useIdleDetection({
@@ -253,7 +253,7 @@ export function SecurityGuard() {
     apiSummary: 'useIdleDetection({ timeout, onIdle?, onActive?, events?, idleOnVisibilityHidden? })'
   },
   {
-    name: '@pareesh/use-page-visibility',
+    name: '@pareeshy/use-page-visibility',
     category: 'Browser APIs',
     purpose: 'Detects if the user is actively viewing your tab or has switched to another tab or window.',
     description:
@@ -269,7 +269,7 @@ export function SecurityGuard() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { usePageVisibility } from '@pareesh/use-page-visibility';
+import { usePageVisibility } from '@pareeshy/use-page-visibility';
 
 export function VideoPlayer() {
   const isVisible = usePageVisibility((visible) => {
@@ -286,7 +286,7 @@ export function VideoPlayer() {
     apiSummary: 'usePageVisibility(onChange?), useDocumentVisibility(onChange?)'
   },
   {
-    name: '@pareesh/use-copy-to-clipboard',
+    name: '@pareeshy/use-copy-to-clipboard',
     category: 'Browser APIs',
     purpose: 'Copies text to the clipboard with one function call and provides a temporary "Copied!" confirmation.',
     description:
@@ -302,7 +302,7 @@ export function VideoPlayer() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useCopyToClipboard } from '@pareesh/use-copy-to-clipboard';
+import { useCopyToClipboard } from '@pareeshy/use-copy-to-clipboard';
 
 export function PromoCode() {
   const { copy, copied } = useCopyToClipboard({ resetTimeout: 2000 });
@@ -320,7 +320,7 @@ export function PromoCode() {
     apiSummary: 'useCopyToClipboard({ resetTimeout? }): { copy, copied, error, reset }'
   },
   {
-    name: '@pareesh/use-media-query',
+    name: '@pareeshy/use-media-query',
     category: 'React Hooks',
     purpose: 'Checks CSS media queries (like mobile vs desktop or dark mode) directly in React components.',
     description:
@@ -336,7 +336,7 @@ export function PromoCode() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useMediaQuery } from '@pareesh/use-media-query';
+import { useMediaQuery } from '@pareeshy/use-media-query';
 
 export function Navigation() {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -354,7 +354,7 @@ export function Navigation() {
     apiSummary: 'useMediaQuery(query, { defaultValue? }), useMediaQueries(queryMap)'
   },
   {
-    name: '@pareesh/use-element-size',
+    name: '@pareeshy/use-element-size',
     category: 'UI Utilities',
     purpose: 'Measures the exact pixel width and height of any HTML element in real time using ResizeObserver.',
     description:
@@ -370,7 +370,7 @@ export function Navigation() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useElementSize } from '@pareesh/use-element-size';
+import { useElementSize } from '@pareeshy/use-element-size';
 
 export function ChartContainer() {
   const [ref, { width, height }] = useElementSize();
@@ -385,7 +385,7 @@ export function ChartContainer() {
     apiSummary: 'useElementSize<E extends HTMLElement>({ box?, initialSize? }): [ref, { width, height }]'
   },
   {
-    name: '@pareesh/use-optimistic-action',
+    name: '@pareeshy/use-optimistic-action',
     category: 'State Management',
     purpose: 'Updates the UI instantly before the server responds, and automatically rolls back if the API fails.',
     description:
@@ -401,7 +401,7 @@ export function ChartContainer() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useOptimisticAction } from '@pareesh/use-optimistic-action';
+import { useOptimisticAction } from '@pareeshy/use-optimistic-action';
 
 export function LikeButton({ initialLikes }: { initialLikes: number }) {
   const { state: likes, execute, isPending, retry } = useOptimisticAction(
@@ -425,7 +425,7 @@ export function LikeButton({ initialLikes }: { initialLikes: number }) {
     apiSummary: 'useOptimisticAction(initialState, actionFn, { update, rollback?, onSuccess?, onError? })'
   },
   {
-    name: '@pareesh/use-persisted-state',
+    name: '@pareeshy/use-persisted-state',
     category: 'State Management',
     purpose: 'Advanced storage hook with automatic expiration (TTL) and schema version migrations.',
     description:
@@ -441,7 +441,7 @@ export function LikeButton({ initialLikes }: { initialLikes: number }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { usePersistedState } from '@pareesh/use-persisted-state';
+import { usePersistedState } from '@pareeshy/use-persisted-state';
 
 export function UserDashboard() {
   const [profile, setProfile] = usePersistedState('user_profile', { name: 'Guest' }, {
@@ -455,7 +455,7 @@ export function UserDashboard() {
     apiSummary: 'usePersistedState<T>(key, defaultVal, { storage?, ttlMs?, version?, migrate? })'
   },
   {
-    name: '@pareesh/use-infinite-scroll',
+    name: '@pareeshy/use-infinite-scroll',
     category: 'Performance',
     purpose: 'Automatically loads more items as the user scrolls toward the bottom of the page.',
     description:
@@ -471,7 +471,7 @@ export function UserDashboard() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useInfiniteScroll } from '@pareesh/use-infinite-scroll';
+import { useInfiniteScroll } from '@pareeshy/use-infinite-scroll';
 
 export function ProductFeed({ items, fetchNextPage, hasMore, isLoading }) {
   const sentinelRef = useInfiniteScroll({
@@ -494,7 +494,7 @@ export function ProductFeed({ items, fetchNextPage, hasMore, isLoading }) {
     apiSummary: 'useInfiniteScroll({ loadMore, hasMore, loading, root?, rootMargin?, threshold? })'
   },
   {
-    name: '@pareesh/use-previous-value',
+    name: '@pareeshy/use-previous-value',
     category: 'React Hooks',
     purpose: 'Remembers what a prop or state variable was on the previous render.',
     description:
@@ -510,7 +510,7 @@ export function ProductFeed({ items, fetchNextPage, hasMore, isLoading }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { usePreviousValue } from '@pareesh/use-previous-value';
+import { usePreviousValue } from '@pareeshy/use-previous-value';
 
 export function StockTicker({ price }: { price: number }) {
   const prevPrice = usePreviousValue(price);
@@ -528,7 +528,7 @@ export function StockTicker({ price }: { price: number }) {
     apiSummary: 'usePreviousValue<T>(value, initialValue?, { isEqual? })'
   },
   {
-    name: '@pareesh/use-value-history',
+    name: '@pareeshy/use-value-history',
     category: 'React Hooks',
     purpose: 'Maintains a chronological history log of the last N values of any state or prop.',
     description:
@@ -544,7 +544,7 @@ export function StockTicker({ price }: { price: number }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React, { useState } from 'react';
-import { useValueHistory } from '@pareesh/use-value-history';
+import { useValueHistory } from '@pareeshy/use-value-history';
 
 export function ScoreTracker() {
   const [score, setScore] = useState(10);
@@ -561,7 +561,7 @@ export function ScoreTracker() {
     apiSummary: 'useValueHistory<T>(val, { maxSize?, isEqual? }): { current, previous, history, clear }'
   },
   {
-    name: '@pareesh/use-permission',
+    name: '@pareeshy/use-permission',
     category: 'Browser APIs',
     purpose: 'Checks and monitors browser permission states (camera, mic, location, notifications).',
     description:
@@ -577,7 +577,7 @@ export function ScoreTracker() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { usePermission } from '@pareesh/use-permission';
+import { usePermission } from '@pareeshy/use-permission';
 
 export function LocationWidget() {
   const { state, isSupported } = usePermission('geolocation');
@@ -595,7 +595,7 @@ export function LocationWidget() {
     apiSummary: 'usePermission(permissionName): { state: PermissionState, isSupported: boolean, isLoading: boolean }'
   },
   {
-    name: '@pareesh/use-web-worker',
+    name: '@pareeshy/use-web-worker',
     category: 'Performance',
     purpose: 'Runs heavy computations in a background Web Worker thread without freezing the React UI.',
     description:
@@ -611,7 +611,7 @@ export function LocationWidget() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useWebWorker } from '@pareesh/use-web-worker';
+import { useWebWorker } from '@pareeshy/use-web-worker';
 
 export function PrimeCalculator() {
   // Offloads calculation into a separate background thread!
@@ -633,7 +633,7 @@ export function PrimeCalculator() {
     apiSummary: 'useWebWorker<TIn, TOut>(workerOrFn): { post, data, error, loading, terminate }'
   },
   {
-    name: '@pareesh/use-undo-redo',
+    name: '@pareeshy/use-undo-redo',
     category: 'State Management',
     purpose: 'Adds full Undo (Ctrl+Z) and Redo (Ctrl+Y) functionality to any state with history limits.',
     description:
@@ -649,7 +649,7 @@ export function PrimeCalculator() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useUndoRedo } from '@pareesh/use-undo-redo';
+import { useUndoRedo } from '@pareeshy/use-undo-redo';
 
 export function NoteEditor() {
   const [text, setText, { undo, redo, canUndo, canRedo }] = useUndoRedo('Initial note');
@@ -669,7 +669,7 @@ export function NoteEditor() {
     apiSummary: 'useUndoRedo<T>(initial, { maxHistory? }): [state, setState, { undo, redo, canUndo, canRedo, clear }]'
   },
   {
-    name: '@pareesh/auto-ellipsis',
+    name: '@pareeshy/auto-ellipsis',
     category: 'UI Utilities',
     purpose: 'Truncates multi-line text cleanly (e.g. 3 lines) with an accessible "Read more / Read less" toggle.',
     description:
@@ -685,7 +685,7 @@ export function NoteEditor() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { AutoEllipsis } from '@pareesh/auto-ellipsis';
+import { AutoEllipsis } from '@pareeshy/auto-ellipsis';
 
 export function ProductReview({ reviewText }: { reviewText: string }) {
   return (
@@ -699,7 +699,7 @@ export function ProductReview({ reviewText }: { reviewText: string }) {
     apiSummary: '<AutoEllipsis text lines expandable? onToggle? />, useAutoEllipsis({ lines })'
   },
   {
-    name: '@pareesh/smart-search',
+    name: '@pareeshy/smart-search',
     category: 'Search & Data',
     purpose: 'Fuzzy search with typo tolerance, highlighted matching letters, and keyboard navigation.',
     description:
@@ -715,7 +715,7 @@ export function ProductReview({ reviewText }: { reviewText: string }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useSmartSearch, highlightMatches } from '@pareesh/smart-search';
+import { useSmartSearch, highlightMatches } from '@pareeshy/smart-search';
 
 export function ItemSearch({ items }) {
   const { query, setQuery, results, selectedIndex, onKeyDown } = useSmartSearch({
@@ -749,7 +749,7 @@ export function ItemSearch({ items }) {
     apiSummary: 'useSmartSearch({ items, keys, debounceMs? }), fuzzyMatch(target, query), highlightMatches(text, query)'
   },
   {
-    name: '@pareesh/file-validator',
+    name: '@pareeshy/file-validator',
     category: 'Files & Images',
     purpose: 'Validates files client-side before upload (size limits, real MIME types via magic bytes, dimensions).',
     description:
@@ -765,7 +765,7 @@ export function ItemSearch({ items }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { validateFiles } from '@pareesh/file-validator';
+import { validateFiles } from '@pareeshy/file-validator';
 
 export function FileUploader() {
   const onFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -788,7 +788,7 @@ export function FileUploader() {
     apiSummary: 'validateFiles(files, { maxSize?, allowedMimeTypes?, minWidth?, maxWidth? })'
   },
   {
-    name: '@pareesh/image-compressor',
+    name: '@pareeshy/image-compressor',
     category: 'Files & Images',
     purpose: 'Shrinks image file sizes in the browser using HTML5 Canvas before uploading to your server.',
     description:
@@ -804,7 +804,7 @@ export function FileUploader() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { compressImage } from '@pareesh/image-compressor';
+import { compressImage } from '@pareeshy/image-compressor';
 
 export function AvatarUploader() {
   const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -827,7 +827,7 @@ export function AvatarUploader() {
     apiSummary: 'compressImage(source, { quality?, maxWidth?, maxHeight?, mimeType? })'
   },
   {
-    name: '@pareesh/image-dimensions',
+    name: '@pareeshy/image-dimensions',
     category: 'Files & Images',
     purpose: 'Extracts image width, height, aspect ratio, and orientation before uploading.',
     description:
@@ -843,7 +843,7 @@ export function AvatarUploader() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { getImageDimensions } from '@pareesh/image-dimensions';
+import { getImageDimensions } from '@pareeshy/image-dimensions';
 
 export function ImageInspector() {
   const checkDimensions = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -863,7 +863,7 @@ export function ImageInspector() {
     apiSummary: 'getImageDimensions(source: File | Blob | string): Promise<{ width, height, aspectRatio, orientation }>'
   },
   {
-    name: '@pareesh/browser-storage',
+    name: '@pareeshy/browser-storage',
     category: 'State Management',
     purpose: 'One unified, simple API to read/write from localStorage, sessionStorage, memory, or IndexedDB.',
     description:
@@ -878,7 +878,7 @@ export function ImageInspector() {
     bundleSize: '2.1 KB',
     dependencies: '0',
     status: 'Stable',
-    exampleSnippet: `import { createBrowserStorage } from '@pareesh/browser-storage';
+    exampleSnippet: `import { createBrowserStorage } from '@pareeshy/browser-storage';
 
 // Works with 'local', 'session', 'memory', or 'indexeddb'
 const db = createBrowserStorage('indexeddb', { dbName: 'app_data' });
@@ -891,7 +891,7 @@ async function saveProjects() {
     apiSummary: 'createBrowserStorage(type: "local" | "session" | "memory" | "indexeddb", options?)'
   },
   {
-    name: '@pareesh/safe-json',
+    name: '@pareeshy/safe-json',
     category: 'Developer Experience',
     purpose: 'Safely parse and stringify JSON without ever throwing crash errors or choking on circular references.',
     description:
@@ -906,7 +906,7 @@ async function saveProjects() {
     bundleSize: '0.7 KB',
     dependencies: '0',
     status: 'Stable',
-    exampleSnippet: `import { safeParse, safeStringifyCircular } from '@pareesh/safe-json';
+    exampleSnippet: `import { safeParse, safeStringifyCircular } from '@pareeshy/safe-json';
 
 // 1. Parsing untrusted data with guaranteed fallback:
 const badData = '{ corrupted json string...';
@@ -920,7 +920,7 @@ const jsonString = safeStringifyCircular(obj);`,
     apiSummary: 'safeParse<T>(raw, fallback), safeParseValue<T>(raw, fallback), safeStringifyCircular(obj)'
   },
   {
-    name: '@pareesh/url-state',
+    name: '@pareeshy/url-state',
     category: 'State Management',
     purpose: 'Syncs React state with URL search parameters (?page=2&tab=settings) so pages are shareable.',
     description:
@@ -936,7 +936,7 @@ const jsonString = safeStringifyCircular(obj);`,
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useUrlState } from '@pareesh/url-state';
+import { useUrlState } from '@pareeshy/url-state';
 
 export function ProductCatalog() {
   // Automatically synchronizes with '?page=1' in the browser address bar
@@ -953,7 +953,7 @@ export function ProductCatalog() {
     apiSummary: 'useUrlState<T>(key, defaultVal, { historyMode?: "push" | "replace", serialize?, deserialize? })'
   },
   {
-    name: '@pareesh/form-dirty-state',
+    name: '@pareeshy/form-dirty-state',
     category: 'UI Utilities',
     purpose: 'Tracks whether form fields were modified by the user, and warns before leaving with unsaved changes.',
     description:
@@ -969,7 +969,7 @@ export function ProductCatalog() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React, { useState } from 'react';
-import { useFormDirtyState } from '@pareesh/form-dirty-state';
+import { useFormDirtyState } from '@pareeshy/form-dirty-state';
 
 export function EditProfile({ user }) {
   const [form, setForm] = useState(user);
@@ -992,7 +992,7 @@ export function EditProfile({ user }) {
     apiSummary: 'useFormDirtyState<T>(current, baseline, { isEqual?, warnOnBeforeUnload? })'
   },
   {
-    name: '@pareesh/scroll-lock',
+    name: '@pareeshy/scroll-lock',
     category: 'UI Utilities',
     purpose: 'Locks body scrolling when a modal is open, preventing page scroll without layout shifting.',
     description:
@@ -1008,7 +1008,7 @@ export function EditProfile({ user }) {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React, { useState } from 'react';
-import { useScrollLock } from '@pareesh/scroll-lock';
+import { useScrollLock } from '@pareeshy/scroll-lock';
 
 export function Modal() {
   const [open, setOpen] = useState(false);
@@ -1034,7 +1034,7 @@ export function Modal() {
     apiSummary: 'useScrollLock(locked: boolean, target?), lockScroll(target?), unlockScroll(target?), isScrollLocked()'
   },
   {
-    name: '@pareesh/react-confirm-action',
+    name: '@pareeshy/react-confirm-action',
     category: 'UI Utilities',
     purpose: 'Replaces ugly browser window.confirm() with beautiful, promise-based confirmation dialogs.',
     description:
@@ -1050,7 +1050,7 @@ export function Modal() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { ConfirmProvider, useConfirmAction } from '@pareesh/react-confirm-action';
+import { ConfirmProvider, useConfirmAction } from '@pareeshy/react-confirm-action';
 
 export function DeleteButton() {
   const confirm = useConfirmAction();
@@ -1072,7 +1072,7 @@ export function DeleteButton() {
     apiSummary: '<ConfirmProvider customDialog?>, useConfirmAction(): (options: ConfirmOptions) => Promise<boolean>'
   },
   {
-    name: '@pareesh/react-shortcuts',
+    name: '@pareeshy/react-shortcuts',
     category: 'Developer Experience',
     purpose: 'Easy keyboard shortcut manager (Ctrl+S, Cmd+K, Escape) with Mac/Windows key normalization.',
     description:
@@ -1088,7 +1088,7 @@ export function DeleteButton() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useShortcut } from '@pareesh/react-shortcuts';
+import { useShortcut } from '@pareeshy/react-shortcuts';
 
 export function DocumentEditor() {
   // 'mod' automatically adapts to 'Cmd' on Mac and 'Ctrl' on Windows!
@@ -1106,7 +1106,7 @@ export function DocumentEditor() {
     apiSummary: 'useShortcut(combo: string, handler: (e) => void, { enabled?, preventDefault?, ignoreInputs? })'
   },
   {
-    name: '@pareesh/react-error-boundary-lite',
+    name: '@pareeshy/react-error-boundary-lite',
     category: 'Developer Experience',
     purpose: 'Catches runtime JavaScript errors in components and displays a fallback UI instead of a blank white page.',
     description:
@@ -1122,7 +1122,7 @@ export function DocumentEditor() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { ErrorBoundary } from '@pareesh/react-error-boundary-lite';
+import { ErrorBoundary } from '@pareeshy/react-error-boundary-lite';
 
 export function App() {
   return (
@@ -1142,7 +1142,7 @@ export function App() {
     apiSummary: '<ErrorBoundary fallback resetKeys? onError? onReset?>, useErrorHandler()'
   },
   {
-    name: '@pareesh/react-file-dropzone-lite',
+    name: '@pareeshy/react-file-dropzone-lite',
     category: 'UI Utilities',
     purpose: 'Creates drag-and-drop file upload zones with visual hover feedback, file filters, and accessibility.',
     description:
@@ -1158,7 +1158,7 @@ export function App() {
     dependencies: '0',
     status: 'Stable',
     exampleSnippet: `import React from 'react';
-import { useFileDropzone } from '@pareesh/react-file-dropzone-lite';
+import { useFileDropzone } from '@pareeshy/react-file-dropzone-lite';
 
 export function Dropzone() {
   const { getRootProps, getInputProps, isDragActive } = useFileDropzone({

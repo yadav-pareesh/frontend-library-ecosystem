@@ -1,20 +1,20 @@
-# @pareesh/use-undo-redo
+# @pareeshy/use-undo-redo
 
 Generic undo/redo state manager hook for React with past/future stacks, capacity limits, and zero unnecessary cloning.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-undo-redo
+npm install @pareeshy/use-undo-redo
 # or
-pnpm add @pareesh/use-undo-redo
+pnpm add @pareeshy/use-undo-redo
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useUndoRedo } from '@pareesh/use-undo-redo';
+import { useUndoRedo } from '@pareeshy/use-undo-redo';
 
 export function CanvasEditor() {
   const [color, setColor, { undo, redo, canUndo, canRedo }] = useUndoRedo('#ffffff');

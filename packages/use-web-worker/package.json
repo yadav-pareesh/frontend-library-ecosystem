@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-web-worker",
+  "name": "@pareeshy/use-web-worker",
   "version": "1.0.0",
   "description": "Simplify Web Worker usage in React with typed request/response communication, loading and error states, and automatic termination cleanup.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

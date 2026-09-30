@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-debounced-value",
+  "name": "@pareeshy/use-debounced-value",
   "version": "1.0.0",
   "description": "High-performance, SSR-safe React hook for debouncing values and callbacks with leading/trailing execution, cancellation, and flushing.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

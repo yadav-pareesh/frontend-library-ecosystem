@@ -1,20 +1,20 @@
-# @pareesh/use-optimistic-action
+# @pareeshy/use-optimistic-action
 
 Reusable optimistic UI workflow hook for React with automatic rollback on error, retry capability, and pending states.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-optimistic-action
+npm install @pareeshy/use-optimistic-action
 # or
-pnpm add @pareesh/use-optimistic-action
+pnpm add @pareeshy/use-optimistic-action
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useOptimisticAction } from '@pareesh/use-optimistic-action';
+import { useOptimisticAction } from '@pareeshy/use-optimistic-action';
 
 export function LikeButton({ postId, initialLikes }: { postId: string; initialLikes: number }) {
   const { state: likes, execute: toggleLike, isPending, error, retry } = useOptimisticAction(

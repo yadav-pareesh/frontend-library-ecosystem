@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-element-size",
+  "name": "@pareeshy/use-element-size",
   "version": "1.0.0",
   "description": "High-performance ResizeObserver-based DOM element measurement hook for React with SSR safety and zero layout thrashing.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

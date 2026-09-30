@@ -1,20 +1,20 @@
-# @pareesh/use-online-queue
+# @pareeshy/use-online-queue
 
 Offline-first persistent action queue for React with automatic retry, idempotency deduplication, and network-aware background processing.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-online-queue
+npm install @pareeshy/use-online-queue
 # or
-pnpm add @pareesh/use-online-queue
+pnpm add @pareeshy/use-online-queue
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useOnlineQueue } from '@pareesh/use-online-queue';
+import { useOnlineQueue } from '@pareeshy/use-online-queue';
 
 interface PostData {
   title: string;

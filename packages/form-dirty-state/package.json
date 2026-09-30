@@ -1,15 +1,22 @@
 {
-  "name": "@pareesh/form-dirty-state",
+  "name": "@pareeshy/form-dirty-state",
   "version": "1.0.0",
   "description": "High-performance dirty state detection hook for React forms with deep equality, reset control, and beforeunload prompt integration.",
-  "author": "Pareesh",
+  "author": "Pareesh Yadav",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
     "directory": "packages/form-dirty-state"
   },
-  "keywords": ["react", "hooks", "forms", "dirty-state", "unsaved-changes", "beforeunload"],
+  "keywords": [
+    "react",
+    "hooks",
+    "forms",
+    "dirty-state",
+    "unsaved-changes",
+    "beforeunload"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
@@ -30,6 +40,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

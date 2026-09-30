@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/auto-ellipsis",
+  "name": "@pareeshy/auto-ellipsis",
   "version": "1.0.0",
   "description": "Intelligent text truncation component and hook for React supporting single-line, multi-line, ResizeObserver responsive reflow, and expand/collapse accessibility.",
   "author": "Pareesh",
@@ -31,6 +31,6 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

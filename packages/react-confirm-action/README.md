@@ -1,20 +1,20 @@
-# @pareesh/react-confirm-action
+# @pareeshy/react-confirm-action
 
 Accessible, headless promise-based confirmation dialog workflow for React with keyboard traps, focus restoration, and zero UI library lock-in.
 
 ## Installation
 
 ```bash
-npm install @pareesh/react-confirm-action
+npm install @pareeshy/react-confirm-action
 # or
-pnpm add @pareesh/react-confirm-action
+pnpm add @pareeshy/react-confirm-action
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { ConfirmProvider, useConfirmAction } from '@pareesh/react-confirm-action';
+import { ConfirmProvider, useConfirmAction } from '@pareeshy/react-confirm-action';
 
 function DeleteButton() {
   const confirm = useConfirmAction();

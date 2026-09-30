@@ -1,20 +1,20 @@
-# @pareesh/use-media-query
+# @pareeshy/use-media-query
 
 SSR-safe reactive media query hook for React with matchMedia listener support and fallback values.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-media-query
+npm install @pareeshy/use-media-query
 # or
-pnpm add @pareesh/use-media-query
+pnpm add @pareeshy/use-media-query
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useMediaQuery } from '@pareesh/use-media-query';
+import { useMediaQuery } from '@pareeshy/use-media-query';
 
 export function Navigation() {
   const isMobile = useMediaQuery('(max-width: 768px)');

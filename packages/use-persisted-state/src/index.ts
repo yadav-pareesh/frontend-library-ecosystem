@@ -1,5 +1,5 @@
 import { useCallback, useRef, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface StorageEnvelope<T> {
   value: T;

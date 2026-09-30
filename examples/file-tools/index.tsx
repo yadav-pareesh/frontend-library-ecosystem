@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useFileDropzone } from '@pareesh/react-file-dropzone-lite';
-import { validateFiles } from '@pareesh/file-validator';
-import { compressImage } from '@pareesh/image-compressor';
-import { getImageDimensions } from '@pareesh/image-dimensions';
+import { useFileDropzone } from '@pareeshy/react-file-dropzone-lite';
+import { validateFiles } from '@pareeshy/file-validator';
+import { compressImage } from '@pareeshy/image-compressor';
+import { getImageDimensions } from '@pareeshy/image-dimensions';
 
 export function FileToolsPlayground() {
   const [status, setStatus] = useState<string>('Select or drop image files...');

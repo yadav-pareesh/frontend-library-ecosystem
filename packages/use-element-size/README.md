@@ -1,20 +1,20 @@
-# @pareesh/use-element-size
+# @pareeshy/use-element-size
 
 High-performance `ResizeObserver`-based DOM element measurement hook for React with SSR safety and zero layout thrashing.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-element-size
+npm install @pareeshy/use-element-size
 # or
-pnpm add @pareesh/use-element-size
+pnpm add @pareeshy/use-element-size
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useElementSize } from '@pareesh/use-element-size';
+import { useElementSize } from '@pareeshy/use-element-size';
 
 export function ResponsiveCard() {
   const [cardRef, { width, height }] = useElementSize<HTMLDivElement>();

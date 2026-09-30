@@ -1,20 +1,20 @@
-# @pareesh/use-idle-detection
+# @pareeshy/use-idle-detection
 
 User inactivity detection hook for React supporting mouse, keyboard, touch, scroll, pointer, and visibility changes with configurable timeout.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-idle-detection
+npm install @pareeshy/use-idle-detection
 # or
-pnpm add @pareesh/use-idle-detection
+pnpm add @pareeshy/use-idle-detection
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useIdleDetection } from '@pareesh/use-idle-detection';
+import { useIdleDetection } from '@pareeshy/use-idle-detection';
 
 export function InactivityWarning() {
   const { isIdle, reset, pause, resume } = useIdleDetection({

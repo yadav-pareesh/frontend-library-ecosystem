@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-session-storage-state",
+  "name": "@pareeshy/use-session-storage-state",
   "version": "1.0.0",
   "description": "Reactive, type-safe sessionStorage state hook for React with error resilience and SSR safety.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

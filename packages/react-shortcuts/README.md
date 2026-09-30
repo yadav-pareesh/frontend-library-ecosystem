@@ -1,20 +1,20 @@
-# @pareesh/react-shortcuts
+# @pareeshy/react-shortcuts
 
 Ergonomic keyboard shortcut manager for React with Mac/Windows 'mod' normalization, scoping, and form input isolation.
 
 ## Installation
 
 ```bash
-npm install @pareesh/react-shortcuts
+npm install @pareeshy/react-shortcuts
 # or
-pnpm add @pareesh/react-shortcuts
+pnpm add @pareeshy/react-shortcuts
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useShortcut } from '@pareesh/react-shortcuts';
+import { useShortcut } from '@pareeshy/react-shortcuts';
 
 export function Editor() {
   const [saved, setSaved] = useState(false);

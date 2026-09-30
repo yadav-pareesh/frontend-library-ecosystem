@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-online-queue",
+  "name": "@pareeshy/use-online-queue",
   "version": "1.0.0",
   "description": "Offline-first persistent action queue for React with automatic retry, idempotency deduplication, and network-aware processing.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

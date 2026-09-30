@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/browser-storage",
+  "name": "@pareeshy/browser-storage",
   "version": "1.0.0",
   "description": "Unified browser storage abstraction for localStorage, sessionStorage, and IndexedDB with typed schemas, custom serialization, and clean async API.",
   "author": "Pareesh",
@@ -27,6 +27,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

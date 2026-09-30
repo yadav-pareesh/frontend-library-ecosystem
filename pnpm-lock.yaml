@@ -217,100 +217,100 @@ importers:
 
   docs:
     dependencies:
-      '@pareesh/auto-ellipsis':
+      '@pareeshy/auto-ellipsis':
         specifier: workspace:*
         version: link:../packages/auto-ellipsis
-      '@pareesh/browser-storage':
+      '@pareeshy/browser-storage':
         specifier: workspace:*
         version: link:../packages/browser-storage
-      '@pareesh/file-validator':
+      '@pareeshy/file-validator':
         specifier: workspace:*
         version: link:../packages/file-validator
-      '@pareesh/form-dirty-state':
+      '@pareeshy/form-dirty-state':
         specifier: workspace:*
         version: link:../packages/form-dirty-state
-      '@pareesh/image-compressor':
+      '@pareeshy/image-compressor':
         specifier: workspace:*
         version: link:../packages/image-compressor
-      '@pareesh/image-dimensions':
+      '@pareeshy/image-dimensions':
         specifier: workspace:*
         version: link:../packages/image-dimensions
-      '@pareesh/react-confirm-action':
+      '@pareeshy/react-confirm-action':
         specifier: workspace:*
         version: link:../packages/react-confirm-action
-      '@pareesh/react-error-boundary-lite':
+      '@pareeshy/react-error-boundary-lite':
         specifier: workspace:*
         version: link:../packages/react-error-boundary-lite
-      '@pareesh/react-file-dropzone-lite':
+      '@pareeshy/react-file-dropzone-lite':
         specifier: workspace:*
         version: link:../packages/react-file-dropzone-lite
-      '@pareesh/react-shortcuts':
+      '@pareeshy/react-shortcuts':
         specifier: workspace:*
         version: link:../packages/react-shortcuts
-      '@pareesh/safe-json':
+      '@pareeshy/safe-json':
         specifier: workspace:*
         version: link:../packages/safe-json
-      '@pareesh/scroll-lock':
+      '@pareeshy/scroll-lock':
         specifier: workspace:*
         version: link:../packages/scroll-lock
-      '@pareesh/smart-search':
+      '@pareeshy/smart-search':
         specifier: workspace:*
         version: link:../packages/smart-search
-      '@pareesh/url-state':
+      '@pareeshy/url-state':
         specifier: workspace:*
         version: link:../packages/url-state
-      '@pareesh/use-copy-to-clipboard':
+      '@pareeshy/use-copy-to-clipboard':
         specifier: workspace:*
         version: link:../packages/use-copy-to-clipboard
-      '@pareesh/use-debounced-value':
+      '@pareeshy/use-debounced-value':
         specifier: workspace:*
         version: link:../packages/use-debounced-value
-      '@pareesh/use-element-size':
+      '@pareeshy/use-element-size':
         specifier: workspace:*
         version: link:../packages/use-element-size
-      '@pareesh/use-idle-detection':
+      '@pareeshy/use-idle-detection':
         specifier: workspace:*
         version: link:../packages/use-idle-detection
-      '@pareesh/use-infinite-scroll':
+      '@pareeshy/use-infinite-scroll':
         specifier: workspace:*
         version: link:../packages/use-infinite-scroll
-      '@pareesh/use-local-storage-state':
+      '@pareeshy/use-local-storage-state':
         specifier: workspace:*
         version: link:../packages/use-local-storage-state
-      '@pareesh/use-media-query':
+      '@pareeshy/use-media-query':
         specifier: workspace:*
         version: link:../packages/use-media-query
-      '@pareesh/use-network-status':
+      '@pareeshy/use-network-status':
         specifier: workspace:*
         version: link:../packages/use-network-status
-      '@pareesh/use-online-queue':
+      '@pareeshy/use-online-queue':
         specifier: workspace:*
         version: link:../packages/use-online-queue
-      '@pareesh/use-optimistic-action':
+      '@pareeshy/use-optimistic-action':
         specifier: workspace:*
         version: link:../packages/use-optimistic-action
-      '@pareesh/use-page-visibility':
+      '@pareeshy/use-page-visibility':
         specifier: workspace:*
         version: link:../packages/use-page-visibility
-      '@pareesh/use-permission':
+      '@pareeshy/use-permission':
         specifier: workspace:*
         version: link:../packages/use-permission
-      '@pareesh/use-persisted-state':
+      '@pareeshy/use-persisted-state':
         specifier: workspace:*
         version: link:../packages/use-persisted-state
-      '@pareesh/use-previous-value':
+      '@pareeshy/use-previous-value':
         specifier: workspace:*
         version: link:../packages/use-previous-value
-      '@pareesh/use-session-storage-state':
+      '@pareeshy/use-session-storage-state':
         specifier: workspace:*
         version: link:../packages/use-session-storage-state
-      '@pareesh/use-undo-redo':
+      '@pareeshy/use-undo-redo':
         specifier: workspace:*
         version: link:../packages/use-undo-redo
-      '@pareesh/use-value-history':
+      '@pareeshy/use-value-history':
         specifier: workspace:*
         version: link:../packages/use-value-history
-      '@pareesh/use-web-worker':
+      '@pareeshy/use-web-worker':
         specifier: workspace:*
         version: link:../packages/use-web-worker
       react:
@@ -332,7 +332,7 @@ importers:
 
   packages/auto-ellipsis:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -344,19 +344,19 @@ importers:
 
   packages/browser-storage:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
 
   packages/file-validator:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
 
   packages/form-dirty-state:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -365,13 +365,13 @@ importers:
 
   packages/image-compressor:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
 
   packages/image-dimensions:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
 
@@ -379,7 +379,7 @@ importers:
 
   packages/react-confirm-action:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -391,7 +391,7 @@ importers:
 
   packages/react-error-boundary-lite:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -400,7 +400,7 @@ importers:
 
   packages/react-file-dropzone-lite:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -412,7 +412,7 @@ importers:
 
   packages/react-shortcuts:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -421,13 +421,13 @@ importers:
 
   packages/safe-json:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
 
   packages/scroll-lock:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -436,7 +436,7 @@ importers:
 
   packages/smart-search:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -445,7 +445,7 @@ importers:
 
   packages/url-state:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -454,7 +454,7 @@ importers:
 
   packages/use-copy-to-clipboard:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -463,7 +463,7 @@ importers:
 
   packages/use-debounced-value:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -472,7 +472,7 @@ importers:
 
   packages/use-element-size:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -481,7 +481,7 @@ importers:
 
   packages/use-idle-detection:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -490,7 +490,7 @@ importers:
 
   packages/use-infinite-scroll:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -499,7 +499,7 @@ importers:
 
   packages/use-local-storage-state:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -508,7 +508,7 @@ importers:
 
   packages/use-media-query:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -517,7 +517,7 @@ importers:
 
   packages/use-network-status:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -526,7 +526,7 @@ importers:
 
   packages/use-online-queue:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -535,7 +535,7 @@ importers:
 
   packages/use-optimistic-action:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -544,7 +544,7 @@ importers:
 
   packages/use-page-visibility:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -553,7 +553,7 @@ importers:
 
   packages/use-permission:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -562,7 +562,7 @@ importers:
 
   packages/use-persisted-state:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -571,7 +571,7 @@ importers:
 
   packages/use-previous-value:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -580,7 +580,7 @@ importers:
 
   packages/use-session-storage-state:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -589,7 +589,7 @@ importers:
 
   packages/use-undo-redo:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -598,7 +598,7 @@ importers:
 
   packages/use-value-history:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:
@@ -607,7 +607,7 @@ importers:
 
   packages/use-web-worker:
     dependencies:
-      '@pareesh/internal-utils':
+      '@pareeshy/internal-utils':
         specifier: workspace:*
         version: link:../internal-utils
       react:

@@ -1,20 +1,20 @@
-# @pareesh/use-persisted-state
+# @pareeshy/use-persisted-state
 
 Generic persisted React state hook supporting `localStorage`, `sessionStorage`, TTL expiration, and schema migrations.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-persisted-state
+npm install @pareeshy/use-persisted-state
 # or
-pnpm add @pareesh/use-persisted-state
+pnpm add @pareeshy/use-persisted-state
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { usePersistedState } from '@pareesh/use-persisted-state';
+import { usePersistedState } from '@pareeshy/use-persisted-state';
 
 export function SessionTimer() {
   const [session, setSession, { remove }] = usePersistedState(

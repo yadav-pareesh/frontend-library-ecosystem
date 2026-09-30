@@ -1,4 +1,4 @@
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export type ImageOrientation = 'landscape' | 'portrait' | 'square';
 

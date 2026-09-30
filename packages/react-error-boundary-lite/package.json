@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/react-error-boundary-lite",
+  "name": "@pareeshy/react-error-boundary-lite",
   "version": "1.0.0",
   "description": "Ultra-lightweight, resilient React Error Boundary component with reset keys, retry handler, and render prop support.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

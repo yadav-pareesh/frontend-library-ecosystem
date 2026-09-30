@@ -1,19 +1,19 @@
-# @pareesh/image-compressor
+# @pareeshy/image-compressor
 
 High-performance client-side image compression library supporting JPEG, PNG, and WebP with dimension resizing and Blob/File output.
 
 ## Installation
 
 ```bash
-npm install @pareesh/image-compressor
+npm install @pareeshy/image-compressor
 # or
-pnpm add @pareesh/image-compressor
+pnpm add @pareeshy/image-compressor
 ```
 
 ## Quick Start
 
 ```ts
-import { compressImage } from '@pareesh/image-compressor';
+import { compressImage } from '@pareeshy/image-compressor';
 
 async function onImageSelected(file: File) {
   const compressed = await compressImage(file, {

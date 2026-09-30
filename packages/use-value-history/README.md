@@ -1,20 +1,20 @@
-# @pareesh/use-value-history
+# @pareeshy/use-value-history
 
 Configurable value history hook for React with max capacity, rollback, diff detection, and clear support.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-value-history
+npm install @pareeshy/use-value-history
 # or
-pnpm add @pareesh/use-value-history
+pnpm add @pareeshy/use-value-history
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useValueHistory } from '@pareesh/use-value-history';
+import { useValueHistory } from '@pareeshy/use-value-history';
 
 export function PriceTracker() {
   const [price, setPrice] = useState(100);

@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/safe-json",
+  "name": "@pareeshy/safe-json",
   "version": "1.0.0",
   "description": "Safe JSON serialization and parsing utilities with circular reference resolution, typed fallback results, and detailed syntax errors.",
   "author": "Pareesh",
@@ -27,6 +27,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

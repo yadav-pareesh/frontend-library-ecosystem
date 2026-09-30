@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface UseIdleOptions {
   /** Inactivity timeout in milliseconds before transitioning to idle. @default 60000 (1 minute) */

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export function getDocumentVisibility(): DocumentVisibilityState {
   if (!isBrowser) return 'visible';

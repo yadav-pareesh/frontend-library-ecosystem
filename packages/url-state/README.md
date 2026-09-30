@@ -1,20 +1,20 @@
-# @pareesh/url-state
+# @pareeshy/url-state
 
 Seamless bidirectional synchronization of React state with browser URL search parameters supporting numbers, booleans, arrays, push/replace history modes, and SSR.
 
 ## Installation
 
 ```bash
-npm install @pareesh/url-state
+npm install @pareeshy/url-state
 # or
-pnpm add @pareesh/url-state
+pnpm add @pareeshy/url-state
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useUrlState } from '@pareesh/url-state';
+import { useUrlState } from '@pareeshy/url-state';
 
 export function Pagination() {
   const [page, setPage, { clear }] = useUrlState<number>('page', 1, {

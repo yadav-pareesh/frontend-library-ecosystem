@@ -1,20 +1,20 @@
-# @pareesh/use-local-storage-state
+# @pareeshy/use-local-storage-state
 
 Reactive, type-safe `localStorage` state hook for React with cross-tab synchronization and SSR safety.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-local-storage-state
+npm install @pareeshy/use-local-storage-state
 # or
-pnpm add @pareesh/use-local-storage-state
+pnpm add @pareeshy/use-local-storage-state
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useLocalStorageState } from '@pareesh/use-local-storage-state';
+import { useLocalStorageState } from '@pareeshy/use-local-storage-state';
 
 export function ThemeSelector() {
   const [theme, setTheme, { remove, error }] = useLocalStorageState<'light' | 'dark'>('app-theme', 'light');

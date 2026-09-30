@@ -1,20 +1,20 @@
-# @pareesh/smart-search
+# @pareeshy/smart-search
 
 High-speed client-side fuzzy search utility and React hook with scoring, keyword highlighting, recent history, and keyboard navigation.
 
 ## Installation
 
 ```bash
-npm install @pareesh/smart-search
+npm install @pareeshy/smart-search
 # or
-pnpm add @pareesh/smart-search
+pnpm add @pareeshy/smart-search
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useSmartSearch, highlightMatches } from '@pareesh/smart-search';
+import { useSmartSearch, highlightMatches } from '@pareeshy/smart-search';
 
 const users = [
   { id: 1, name: 'Alice Smith', email: 'alice@example.com' },

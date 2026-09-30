@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/smart-search",
+  "name": "@pareeshy/smart-search",
   "version": "1.0.0",
   "description": "High-speed client-side fuzzy search utility and React hook with scoring, keyword highlighting, recent history, and keyboard navigation.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

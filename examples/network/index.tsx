@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNetworkStatus } from '@pareesh/use-network-status';
-import { useOnlineQueue } from '@pareesh/use-online-queue';
+import { useNetworkStatus } from '@pareeshy/use-network-status';
+import { useOnlineQueue } from '@pareeshy/use-online-queue';
 
 export function NetworkPlayground() {
   const { online, effectiveType, downlink, rtt } = useNetworkStatus();

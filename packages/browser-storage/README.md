@@ -1,19 +1,19 @@
-# @pareesh/browser-storage
+# @pareeshy/browser-storage
 
 Unified browser storage abstraction for localStorage, sessionStorage, memory, and IndexedDB with typed schemas, custom serialization, and clean async API.
 
 ## Installation
 
 ```bash
-npm install @pareesh/browser-storage
+npm install @pareeshy/browser-storage
 # or
-pnpm add @pareesh/browser-storage
+pnpm add @pareeshy/browser-storage
 ```
 
 ## Quick Start
 
 ```ts
-import { createBrowserStorage } from '@pareesh/browser-storage';
+import { createBrowserStorage } from '@pareeshy/browser-storage';
 
 interface UserSettings {
   theme: 'light' | 'dark';

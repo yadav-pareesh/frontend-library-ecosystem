@@ -1,19 +1,19 @@
-# @pareesh/safe-json
+# @pareeshy/safe-json
 
 Safe JSON serialization and parsing utilities with circular reference resolution, typed fallback results, and detailed syntax errors.
 
 ## Installation
 
 ```bash
-npm install @pareesh/safe-json
+npm install @pareeshy/safe-json
 # or
-pnpm add @pareesh/safe-json
+pnpm add @pareeshy/safe-json
 ```
 
 ## Quick Start
 
 ```ts
-import { safeParse, safeParseValue, safeStringifyCircular } from '@pareesh/safe-json';
+import { safeParse, safeParseValue, safeStringifyCircular } from '@pareeshy/safe-json';
 
 // Type-safe parse without try/catch
 const result = safeParse<{ id: number }>('{"id": 42}');

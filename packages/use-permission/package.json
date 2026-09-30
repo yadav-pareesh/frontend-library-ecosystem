@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-permission",
+  "name": "@pareeshy/use-permission",
   "version": "1.0.0",
   "description": "Browser Permissions API abstraction hook for React supporting camera, microphone, geolocation, notifications, and clipboard with graceful degradation.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

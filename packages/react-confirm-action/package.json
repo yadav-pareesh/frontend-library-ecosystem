@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/react-confirm-action",
+  "name": "@pareeshy/react-confirm-action",
   "version": "1.0.0",
   "description": "Accessible, headless promise-based confirmation dialog workflow for React with keyboard traps and zero UI library lock-in.",
   "author": "Pareesh",
@@ -31,6 +31,6 @@
     "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

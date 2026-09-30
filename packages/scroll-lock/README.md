@@ -1,13 +1,13 @@
-# @pareesh/scroll-lock
+# @pareeshy/scroll-lock
 
 Reliable scroll locking library and React hook with scrollbar shift compensation, nested locks support, and clean restoration.
 
 ## Installation
 
 ```bash
-npm install @pareesh/scroll-lock
+npm install @pareeshy/scroll-lock
 # or
-pnpm add @pareesh/scroll-lock
+pnpm add @pareeshy/scroll-lock
 ```
 
 ## Quick Start
@@ -16,7 +16,7 @@ pnpm add @pareesh/scroll-lock
 
 ```tsx
 import React, { useState } from 'react';
-import { useScrollLock } from '@pareesh/scroll-lock';
+import { useScrollLock } from '@pareeshy/scroll-lock';
 
 export function Modal({ isOpen, onClose }) {
   // Automatically locks body scroll when open and unlocks on close/unmount
@@ -38,7 +38,7 @@ export function Modal({ isOpen, onClose }) {
 ### Vanilla JS / Imperative API
 
 ```ts
-import { lockScroll } from '@pareesh/scroll-lock';
+import { lockScroll } from '@pareeshy/scroll-lock';
 
 const unlock = lockScroll();
 

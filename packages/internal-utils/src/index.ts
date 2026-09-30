@@ -1,5 +1,5 @@
 /**
- * @pareesh/internal-utils
+ * @pareeshy/internal-utils
  * Private shared utilities for @pareesh monorepo packages.
  */
 

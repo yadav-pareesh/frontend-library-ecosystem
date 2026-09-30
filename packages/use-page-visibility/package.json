@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/use-page-visibility",
+  "name": "@pareeshy/use-page-visibility",
   "version": "1.0.0",
   "description": "Simple reactive API for document visibility state with SSR safety and change callbacks.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

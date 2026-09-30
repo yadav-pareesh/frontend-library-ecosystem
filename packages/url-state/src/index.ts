@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export type HistoryMode = 'push' | 'replace';
 

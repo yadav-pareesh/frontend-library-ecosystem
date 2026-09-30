@@ -1,5 +1,5 @@
 import React from 'react';
-import { useUndoRedo } from '@pareesh/use-undo-redo';
+import { useUndoRedo } from '@pareeshy/use-undo-redo';
 
 export function UndoRedoPlayground() {
   const [text, setText, { undo, redo, canUndo, canRedo, clear, past, future }] = useUndoRedo('Initial text');

@@ -1,20 +1,20 @@
-# @pareesh/use-debounced-value
+# @pareeshy/use-debounced-value
 
 High-performance, SSR-safe React hook for debouncing values and callbacks with leading/trailing execution, cancellation, and flushing.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-debounced-value
+npm install @pareeshy/use-debounced-value
 # or
-pnpm add @pareesh/use-debounced-value
+pnpm add @pareeshy/use-debounced-value
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useDebouncedValue } from '@pareesh/use-debounced-value';
+import { useDebouncedValue } from '@pareeshy/use-debounced-value';
 
 export function SearchComponent() {
   const [query, setQuery] = useState('');

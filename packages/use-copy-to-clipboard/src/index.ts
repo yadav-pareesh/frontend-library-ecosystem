@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface UseCopyToClipboardOptions {
   /** Delay in milliseconds before resetting `copied` state to false. @default 2000 */

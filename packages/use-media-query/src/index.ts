@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface UseMediaQueryOptions {
   /** Default value to return during SSR. @default false */

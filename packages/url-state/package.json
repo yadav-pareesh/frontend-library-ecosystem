@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/url-state",
+  "name": "@pareeshy/url-state",
   "version": "1.0.0",
   "description": "Seamless bidirectional synchronization of React state with browser URL search parameters supporting numbers, booleans, arrays, push/replace modes, and SSR.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

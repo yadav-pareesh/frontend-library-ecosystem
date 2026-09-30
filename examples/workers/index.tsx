@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useWebWorker } from '@pareesh/use-web-worker';
+import { useWebWorker } from '@pareeshy/use-web-worker';
 
 function fibonacci(n: number): number {
   if (n <= 1) return n;

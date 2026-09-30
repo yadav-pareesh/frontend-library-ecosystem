@@ -1,19 +1,19 @@
-# @pareesh/file-validator
+# @pareeshy/file-validator
 
 Comprehensive client-side file validation library supporting MIME types, magic bytes inspection, size limits, image dimensions, and detailed error reports.
 
 ## Installation
 
 ```bash
-npm install @pareesh/file-validator
+npm install @pareeshy/file-validator
 # or
-pnpm add @pareesh/file-validator
+pnpm add @pareeshy/file-validator
 ```
 
 ## Quick Start
 
 ```ts
-import { validateFiles } from '@pareesh/file-validator';
+import { validateFiles } from '@pareeshy/file-validator';
 
 async function handleUpload(files: FileList) {
   const result = await validateFiles(files, {

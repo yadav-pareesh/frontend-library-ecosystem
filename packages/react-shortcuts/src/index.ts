@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface ParsedShortcut {
   meta: boolean;

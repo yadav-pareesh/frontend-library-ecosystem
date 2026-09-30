@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@pareesh/internal-utils", "@pareesh/docs"]
+  "ignore": ["@pareeshy/docs"]
 }

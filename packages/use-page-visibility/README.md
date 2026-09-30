@@ -1,20 +1,20 @@
-# @pareesh/use-page-visibility
+# @pareeshy/use-page-visibility
 
 Simple reactive API for document visibility state with SSR safety and change callbacks.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-page-visibility
+npm install @pareeshy/use-page-visibility
 # or
-pnpm add @pareesh/use-page-visibility
+pnpm add @pareeshy/use-page-visibility
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useEffect } from 'react';
-import { usePageVisibility } from '@pareesh/use-page-visibility';
+import { usePageVisibility } from '@pareeshy/use-page-visibility';
 
 export function VideoPlayer() {
   const isVisible = usePageVisibility((visible) => {

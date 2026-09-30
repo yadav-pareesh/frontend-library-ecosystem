@@ -1,20 +1,20 @@
-# @pareesh/auto-ellipsis
+# @pareeshy/auto-ellipsis
 
 Intelligent text truncation component and hook for React supporting single-line, multi-line, ResizeObserver responsive reflow, and expand/collapse accessibility.
 
 ## Installation
 
 ```bash
-npm install @pareesh/auto-ellipsis
+npm install @pareeshy/auto-ellipsis
 # or
-pnpm add @pareesh/auto-ellipsis
+pnpm add @pareeshy/auto-ellipsis
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { AutoEllipsis } from '@pareesh/auto-ellipsis';
+import { AutoEllipsis } from '@pareeshy/auto-ellipsis';
 
 export function ProductDescription({ description }: { description: string }) {
   return (
@@ -32,7 +32,7 @@ export function ProductDescription({ description }: { description: string }) {
 ## Hook API: `useAutoEllipsis`
 
 ```tsx
-import { useAutoEllipsis } from '@pareesh/auto-ellipsis';
+import { useAutoEllipsis } from '@pareeshy/auto-ellipsis';
 
 function CustomCard({ bio }: { bio: string }) {
   const [ref, { isTruncated, isExpanded, toggleExpand }] = useAutoEllipsis({ lines: 2 });

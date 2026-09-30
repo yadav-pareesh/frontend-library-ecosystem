@@ -1,20 +1,20 @@
-# @pareesh/use-network-status
+# @pareeshy/use-network-status
 
 Reactive network status hook for React with online/offline detection, effective connection type, downlink, RTT, and graceful degradation.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-network-status
+npm install @pareeshy/use-network-status
 # or
-pnpm add @pareesh/use-network-status
+pnpm add @pareeshy/use-network-status
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useNetworkStatus } from '@pareesh/use-network-status';
+import { useNetworkStatus } from '@pareeshy/use-network-status';
 
 export function ConnectionBanner() {
   const { online, effectiveType, downlink, rtt } = useNetworkStatus();

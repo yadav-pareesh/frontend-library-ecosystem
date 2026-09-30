@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 interface OriginalStyles {
   overflow: string;

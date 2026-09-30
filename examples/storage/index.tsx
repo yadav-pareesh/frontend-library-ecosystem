@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLocalStorageState } from '@pareesh/use-local-storage-state';
-import { useSessionStorageState } from '@pareesh/use-session-storage-state';
-import { usePersistedState } from '@pareesh/use-persisted-state';
+import { useLocalStorageState } from '@pareeshy/use-local-storage-state';
+import { useSessionStorageState } from '@pareeshy/use-session-storage-state';
+import { usePersistedState } from '@pareeshy/use-persisted-state';
 
 export function StoragePlayground() {
   const [theme, setTheme] = useLocalStorageState('playground_theme', 'dark');

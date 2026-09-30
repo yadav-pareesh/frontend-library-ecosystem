@@ -1,20 +1,20 @@
-# @pareesh/form-dirty-state
+# @pareeshy/form-dirty-state
 
 High-performance dirty state detection hook for React forms with deep equality, reset control, and beforeunload prompt integration.
 
 ## Installation
 
 ```bash
-npm install @pareesh/form-dirty-state
+npm install @pareeshy/form-dirty-state
 # or
-pnpm add @pareesh/form-dirty-state
+pnpm add @pareeshy/form-dirty-state
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { useFormDirtyState } from '@pareesh/form-dirty-state';
+import { useFormDirtyState } from '@pareeshy/form-dirty-state';
 
 export function EditProfile({ initialUser }) {
   const [form, setForm] = useState(initialUser);

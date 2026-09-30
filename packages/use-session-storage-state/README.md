@@ -1,20 +1,20 @@
-# @pareesh/use-session-storage-state
+# @pareeshy/use-session-storage-state
 
 Reactive, type-safe `sessionStorage` state hook for React with error resilience and SSR safety.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-session-storage-state
+npm install @pareeshy/use-session-storage-state
 # or
-pnpm add @pareesh/use-session-storage-state
+pnpm add @pareeshy/use-session-storage-state
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useSessionStorageState } from '@pareesh/use-session-storage-state';
+import { useSessionStorageState } from '@pareeshy/use-session-storage-state';
 
 export function StepWizard() {
   const [step, setStep, { remove }] = useSessionStorageState<number>('wizard-step', 1);

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { isBrowser } from '@pareesh/internal-utils';
+import { isBrowser } from '@pareeshy/internal-utils';
 
 export type EffectiveConnectionType = 'slow-2g' | '2g' | '3g' | '4g';
 

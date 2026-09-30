@@ -1,20 +1,20 @@
-# @pareesh/use-previous-value
+# @pareeshy/use-previous-value
 
 Lightweight React hook for tracking previous values with custom equality and initial value support.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-previous-value
+npm install @pareeshy/use-previous-value
 # or
-pnpm add @pareesh/use-previous-value
+pnpm add @pareeshy/use-previous-value
 ```
 
 ## Quick Start
 
 ```tsx
 import React, { useState } from 'react';
-import { usePreviousValue } from '@pareesh/use-previous-value';
+import { usePreviousValue } from '@pareeshy/use-previous-value';
 
 export function Counter() {
   const [count, setCount] = useState(0);

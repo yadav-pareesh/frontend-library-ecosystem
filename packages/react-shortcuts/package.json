@@ -1,5 +1,5 @@
 {
-  "name": "@pareesh/react-shortcuts",
+  "name": "@pareeshy/react-shortcuts",
   "version": "1.0.0",
   "description": "Ergonomic keyboard shortcut manager for React with Mac/Windows 'mod' normalization, scoping, and conflict detection.",
   "author": "Pareesh",
@@ -30,6 +30,6 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@pareesh/internal-utils": "workspace:*"
+    "@pareeshy/internal-utils": "workspace:*"
   }
 }

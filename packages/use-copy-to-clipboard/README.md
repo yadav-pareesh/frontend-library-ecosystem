@@ -1,20 +1,20 @@
-# @pareesh/use-copy-to-clipboard
+# @pareeshy/use-copy-to-clipboard
 
 Robust React hook for copying text to clipboard with modern Clipboard API, fallback support, copied state, and configurable timeout.
 
 ## Installation
 
 ```bash
-npm install @pareesh/use-copy-to-clipboard
+npm install @pareeshy/use-copy-to-clipboard
 # or
-pnpm add @pareesh/use-copy-to-clipboard
+pnpm add @pareeshy/use-copy-to-clipboard
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { useCopyToClipboard } from '@pareesh/use-copy-to-clipboard';
+import { useCopyToClipboard } from '@pareeshy/use-copy-to-clipboard';
 
 export function ShareCode({ snippet }: { snippet: string }) {
   const { copy, copied, error } = useCopyToClipboard({ resetTimeout: 2500 });

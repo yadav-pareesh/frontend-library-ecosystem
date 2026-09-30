@@ -16,9 +16,11 @@
     "format:check": "prettier --check \"packages/*/src/**/*.{ts,tsx}\"",
     "check": "pnpm typecheck && pnpm test && pnpm build",
     "clean": "turbo run clean && rimraf node_modules",
-    "dev:docs": "pnpm --filter @pareesh/docs dev",
-    "build:docs": "pnpm --filter @pareesh/docs build",
-    "preview:docs": "pnpm --filter @pareesh/docs preview"
+    "dev:docs": "pnpm --filter @pareeshy/docs dev",
+    "build:docs": "pnpm --filter @pareeshy/docs build",
+    "preview:docs": "pnpm --filter @pareeshy/docs preview",
+    "changeset": "changeset",
+    "packages:publish": "pnpm -r publish --access public --no-git-checks"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.12",

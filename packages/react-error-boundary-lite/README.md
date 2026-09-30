@@ -1,20 +1,20 @@
-# @pareesh/react-error-boundary-lite
+# @pareeshy/react-error-boundary-lite
 
 Ultra-lightweight, resilient React Error Boundary component with reset keys, retry handler, and render prop support.
 
 ## Installation
 
 ```bash
-npm install @pareesh/react-error-boundary-lite
+npm install @pareeshy/react-error-boundary-lite
 # or
-pnpm add @pareesh/react-error-boundary-lite
+pnpm add @pareeshy/react-error-boundary-lite
 ```
 
 ## Quick Start
 
 ```tsx
 import React from 'react';
-import { ErrorBoundary } from '@pareesh/react-error-boundary-lite';
+import { ErrorBoundary } from '@pareeshy/react-error-boundary-lite';
 
 export function ProfileView({ userId }: { userId: string }) {
   return (

@@ -1,19 +1,19 @@
-# @pareesh/image-dimensions
+# @pareeshy/image-dimensions
 
 Safe, lightweight image dimensions extractor for File, Blob, and image URL inputs in browsers with aspect ratio calculations.
 
 ## Installation
 
 ```bash
-npm install @pareesh/image-dimensions
+npm install @pareeshy/image-dimensions
 # or
-pnpm add @pareesh/image-dimensions
+pnpm add @pareeshy/image-dimensions
 ```
 
 ## Quick Start
 
 ```ts
-import { getImageDimensions } from '@pareesh/image-dimensions';
+import { getImageDimensions } from '@pareeshy/image-dimensions';
 
 async function onFileSelected(file: File) {
   const { width, height, aspectRatio, orientation } = await getImageDimensions(file);

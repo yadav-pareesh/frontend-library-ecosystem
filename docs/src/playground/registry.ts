@@ -1,9 +1,10 @@
 import React from 'react';
 import { PlaygroundDemo } from './types';
 import { PACKAGES_DATA } from '../packagesData';
-import { PACKAGE_ICONS } from '../constants/packageIcons';
+import { PACKAGE_ICONS, CATEGORY_ORDER } from '../constants/packageIcons';
 
 // Demo components importing real workspace packages
+import { AiAssistantDemo } from './demos/aiAssistantDemo';
 import { UseDebouncedValueDemo } from './demos/useDebouncedValueDemo';
 import { UseLocalStorageStateDemo } from './demos/useLocalStorageStateDemo';
 import { UseSessionStorageStateDemo } from './demos/useSessionStorageStateDemo';
@@ -72,7 +73,10 @@ const DEMO_COMPONENTS: Record<string, React.ComponentType<any>> = {
   '@pareeshy/react-error-boundary-lite': ReactErrorBoundaryLiteDemo,
   '@pareeshy/react-file-dropzone-lite': ReactFileDropzoneLiteDemo,
   '@pareeshy/internal-utils': InternalUtilsDemo,
+  '@pareeshy/ai-mock-assistant': AiAssistantDemo,
 };
+
+export const PLAYGROUND_CATEGORIES = ['All', ...CATEGORY_ORDER] as const;
 
 // Build the complete typed registry deriving metadata from PACKAGES_DATA
 export const PLAYGROUND_REGISTRY: PlaygroundDemo[] = PACKAGES_DATA.map((pkg) => {

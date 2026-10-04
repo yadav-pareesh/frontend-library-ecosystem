@@ -17,7 +17,7 @@ export interface LocalStorageControls {
   error: unknown | null;
 }
 
-const CUSTOM_STORAGE_EVENT = 'pareesh:local-storage-change';
+const CUSTOM_STORAGE_EVENT = 'pareeshy:local-storage-change';
 
 interface CustomStorageDetail {
   key: string;

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 export interface FuzzyMatchResult {
   match: boolean;
@@ -44,12 +44,10 @@ export function highlightMatches(text: string, query: string): HighlightSegment[
   const regex = new RegExp(`(${trimmed.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
   const parts = text.split(regex);
 
-  return parts
-    .filter(Boolean)
-    .map((part) => ({
-      text: part,
-      isMatch: part.toLowerCase() === trimmed.toLowerCase()
-    }));
+  return parts.filter(Boolean).map((part) => ({
+    text: part,
+    isMatch: part.toLowerCase() === trimmed.toLowerCase()
+  }));
 }
 
 export interface SearchResult<T> {
@@ -77,16 +75,8 @@ export interface UseSmartSearchReturn<T> {
   clearRecentSearches: () => void;
 }
 
-export function useSmartSearch<T>(
-  options: UseSmartSearchOptions<T>
-): UseSmartSearchReturn<T> {
-  const {
-    items,
-    keys,
-    threshold = 10,
-    debounceMs = 150,
-    recentLimit = 5
-  } = options;
+export function useSmartSearch<T>(options: UseSmartSearchOptions<T>): UseSmartSearchReturn<T> {
+  const { items, keys, threshold = 10, debounceMs = 150, recentLimit = 5 } = options;
 
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');

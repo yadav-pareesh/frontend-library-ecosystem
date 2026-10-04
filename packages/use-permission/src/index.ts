@@ -2,12 +2,7 @@ import { useEffect, useState } from 'react';
 import { isBrowser } from '@pareeshy/internal-utils';
 
 export type StandardPermissionName =
-  | 'geolocation'
-  | 'notifications'
-  | 'camera'
-  | 'microphone'
-  | 'clipboard-read'
-  | 'clipboard-write';
+  'geolocation' | 'notifications' | 'camera' | 'microphone' | 'clipboard-read' | 'clipboard-write';
 
 export type ExtendedPermissionState = PermissionState | 'unsupported';
 
@@ -20,10 +15,10 @@ export interface UsePermissionResult {
 function checkPermissionsSupported(): boolean {
   return Boolean(
     isBrowser &&
-      typeof navigator !== 'undefined' &&
-      'permissions' in navigator &&
-      navigator.permissions &&
-      typeof navigator.permissions.query === 'function'
+    typeof navigator !== 'undefined' &&
+    'permissions' in navigator &&
+    navigator.permissions &&
+    typeof navigator.permissions.query === 'function'
   );
 }
 
@@ -48,7 +43,6 @@ export function usePermission(
       return;
     }
 
-    let statusRef: PermissionStatus | null = null;
     let isCancelled = false;
 
     const queryPermission = async () => {
@@ -64,7 +58,6 @@ export function usePermission(
         const status = await navigator.permissions.query(descriptor);
 
         if (isCancelled) return;
-        statusRef = status;
         setState(status.state);
         setIsLoading(false);
 

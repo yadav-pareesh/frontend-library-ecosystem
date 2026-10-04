@@ -35,18 +35,10 @@ export function usePersistedState<T>(
   defaultValue: T | (() => T),
   options: UsePersistedStateOptions<T> = {}
 ): [T, (val: T | ((prev: T) => T)) => void, PersistedStateControls] {
-  const {
-    storage = 'local',
-    ttlMs,
-    version = 1,
-    migrate,
-    onError
-  } = options;
+  const { storage = 'local', ttlMs, version = 1, migrate, onError } = options;
 
   const getInitial = useCallback((): T => {
-    return typeof defaultValue === 'function'
-      ? (defaultValue as () => T)()
-      : defaultValue;
+    return typeof defaultValue === 'function' ? (defaultValue as () => T)() : defaultValue;
   }, [defaultValue]);
 
   const readFromStorage = useCallback((): T => {
@@ -70,10 +62,7 @@ export function usePersistedState<T>(
         if (migrate) {
           const upgraded = migrate(envelope.value, envelope.version);
           const nextExpires = ttlMs ? Date.now() + ttlMs : null;
-          area.setItem(
-            key,
-            JSON.stringify({ value: upgraded, version, expiresAt: nextExpires })
-          );
+          area.setItem(key, JSON.stringify({ value: upgraded, version, expiresAt: nextExpires }));
           return upgraded;
         }
       }

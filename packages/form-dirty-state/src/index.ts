@@ -36,10 +36,9 @@ export function useFormDirtyState<T extends Record<string, any>>(
 
   const dirtyFields = useMemo(() => {
     const fields: (keyof T)[] = [];
-    const allKeys = new Set([
-      ...Object.keys(currentValues),
-      ...Object.keys(baseline)
-    ]) as Set<keyof T>;
+    const allKeys = new Set([...Object.keys(currentValues), ...Object.keys(baseline)]) as Set<
+      keyof T
+    >;
 
     for (const key of allKeys) {
       if (!isEqual(currentValues[key], baseline[key])) {
@@ -50,9 +49,12 @@ export function useFormDirtyState<T extends Record<string, any>>(
     return fields;
   }, [currentValues, baseline, isEqual]);
 
-  const resetBaseline = useCallback((newBaseline?: T) => {
-    setBaseline(newBaseline ?? currentValues);
-  }, [currentValues]);
+  const resetBaseline = useCallback(
+    (newBaseline?: T) => {
+      setBaseline(newBaseline ?? currentValues);
+    },
+    [currentValues]
+  );
 
   useEffect(() => {
     if (!isBrowser || !warnOnBeforeUnload || !isDirty) return;

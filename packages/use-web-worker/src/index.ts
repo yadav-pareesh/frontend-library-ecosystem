@@ -14,10 +14,7 @@ export interface UseWebWorkerReturn<TInput, TOutput> {
   terminate: () => void;
 }
 
-export type WorkerCreator<TInput, TOutput> =
-  | (() => Worker)
-  | ((input: TInput) => TOutput)
-  | string;
+export type WorkerCreator<TInput, TOutput> = (() => Worker) | ((input: TInput) => TOutput) | string;
 
 function createWorkerFromFunction<TInput, TOutput>(
   fn: (input: TInput) => TOutput

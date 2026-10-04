@@ -48,9 +48,7 @@ export function useSessionStorageState<T>(
   const [error, setError] = useState<unknown | null>(null);
 
   const getInitialValue = useCallback((): T => {
-    return typeof defaultValue === 'function'
-      ? (defaultValue as () => T)()
-      : defaultValue;
+    return typeof defaultValue === 'function' ? (defaultValue as () => T)() : defaultValue;
   }, [defaultValue]);
 
   const readValueFromStorage = useCallback((): T => {

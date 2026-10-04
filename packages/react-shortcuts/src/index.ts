@@ -61,12 +61,7 @@ export interface ShortcutOptions {
 function isTextInput(element: EventTarget | null): boolean {
   if (!element || !(element instanceof HTMLElement)) return false;
   const tag = element.tagName.toLowerCase();
-  return (
-    tag === 'input' ||
-    tag === 'textarea' ||
-    tag === 'select' ||
-    element.isContentEditable
-  );
+  return tag === 'input' || tag === 'textarea' || tag === 'select' || element.isContentEditable;
 }
 
 export function useShortcut(

@@ -92,8 +92,7 @@ export function useCopyToClipboard(
 
         return true;
       } catch (err) {
-        const failureError =
-          err instanceof Error ? err : new Error(String(err));
+        const failureError = err instanceof Error ? err : new Error(String(err));
         setError(failureError);
         setCopied(false);
         return false;

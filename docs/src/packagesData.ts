@@ -25,7 +25,8 @@ export const PACKAGES_DATA: PackageInfo[] = [
   {
     name: '@pareeshy/use-debounced-value',
     category: 'React Hooks',
-    purpose: 'Delays updating a value or calling a function until the user stops typing or interacting.',
+    purpose:
+      'Delays updating a value or calling a function until the user stops typing or interacting.',
     description:
       'When users type into a search bar, you do not want to trigger an API request on every single keystroke (which could fire 20 requests in 2 seconds!). Debouncing waits until the user pauses typing for a specified time (e.g. 300ms) before updating the value or making the call.',
     whenToUse: [
@@ -67,14 +68,16 @@ export function SearchBox() {
     </div>
   );
 }`,
-    apiSummary: 'useDebouncedValue(val, delay, { leading?, trailing?, maxWait? }), useDebouncedCallback(fn, delay, opts)'
+    apiSummary:
+      'useDebouncedValue(val, delay, { leading?, trailing?, maxWait? }), useDebouncedCallback(fn, delay, opts)'
   },
   {
     name: '@pareeshy/use-local-storage-state',
     category: 'State Management',
-    purpose: 'Stores state in the browser\'s localStorage so data persists across reloads and syncs across tabs.',
+    purpose:
+      "Stores state in the browser's localStorage so data persists across reloads and syncs across tabs.",
     description:
-      'Works just like React\'s standard useState, but automatically saves your state to browser localStorage. If the user refreshes the page or reopens the browser days later, their saved settings remain intact. It also synchronizes automatically across multiple open tabs.',
+      "Works just like React's standard useState, but automatically saves your state to browser localStorage. If the user refreshes the page or reopens the browser days later, their saved settings remain intact. It also synchronizes automatically across multiple open tabs.",
     whenToUse: [
       'Remembering user preferences like Dark Mode or Selected Language',
       'Saving shopping cart items before checkout',
@@ -109,7 +112,7 @@ export function ThemeSwitcher() {
     category: 'State Management',
     purpose: 'Stores state for the current tab that clears automatically when the tab is closed.',
     description:
-      'Similar to localStorage, but the data only survives while the user keeps the current browser tab open. Perfect for temporary multi-step data or sensitive inputs that you don\'t want permanently stored on the user\'s computer.',
+      "Similar to localStorage, but the data only survives while the user keeps the current browser tab open. Perfect for temporary multi-step data or sensitive inputs that you don't want permanently stored on the user's computer.",
     whenToUse: [
       'Multi-step registration or checkout wizard progress',
       'Temporary page filters within a single browsing session',
@@ -140,9 +143,10 @@ export function CheckoutWizard() {
   {
     name: '@pareeshy/use-network-status',
     category: 'Browser APIs',
-    purpose: 'Detects whether the user is online or offline, and monitors connection speed (4G, 3G, WiFi).',
+    purpose:
+      'Detects whether the user is online or offline, and monitors connection speed (4G, 3G, WiFi).',
     description:
-      'Listens to the browser\'s internet connection in real-time. If the user loses Wi-Fi or enters an elevator, your app is immediately notified, allowing you to show an offline banner or prevent failed submissions.',
+      "Listens to the browser's internet connection in real-time. If the user loses Wi-Fi or enters an elevator, your app is immediately notified, allowing you to show an offline banner or prevent failed submissions.",
     whenToUse: [
       'Displaying a friendly "You are offline" banner at the top of your app',
       'Disabling payment or submission buttons when there is no internet connection',
@@ -173,12 +177,14 @@ export function NetworkBanner() {
     </div>
   );
 }`,
-    apiSummary: 'useNetworkStatus(): { online: boolean, effectiveType: string, downlink: number, rtt: number }'
+    apiSummary:
+      'useNetworkStatus(): { online: boolean, effectiveType: string, downlink: number, rtt: number }'
   },
   {
     name: '@pareeshy/use-online-queue',
     category: 'Performance',
-    purpose: 'Queues actions while offline and automatically executes them with retries when back online.',
+    purpose:
+      'Queues actions while offline and automatically executes them with retries when back online.',
     description:
       'An offline-first action queue. When a user clicks "Like", "Send message", or "Submit" while in an offline area, this hook holds those actions safely in storage and automatically syncs them as soon as internet connection is restored.',
     whenToUse: [
@@ -217,7 +223,8 @@ export function NoteCreator() {
   {
     name: '@pareeshy/use-idle-detection',
     category: 'Browser APIs',
-    purpose: 'Detects when the user is inactive (no mouse, typing, or touch) for a configured duration.',
+    purpose:
+      'Detects when the user is inactive (no mouse, typing, or touch) for a configured duration.',
     description:
       'Monitors user interaction across mouse movements, keyboard presses, touchscreen taps, and tab visibility. If no activity is detected after a specified time (e.g. 5 minutes), you can trigger automatic logout or pause background animations.',
     whenToUse: [
@@ -250,14 +257,16 @@ export function SecurityGuard() {
 
   return <p>Session active. Watching for user inactivity.</p>;
 }`,
-    apiSummary: 'useIdleDetection({ timeout, onIdle?, onActive?, events?, idleOnVisibilityHidden? })'
+    apiSummary:
+      'useIdleDetection({ timeout, onIdle?, onActive?, events?, idleOnVisibilityHidden? })'
   },
   {
     name: '@pareeshy/use-page-visibility',
     category: 'Browser APIs',
-    purpose: 'Detects if the user is actively viewing your tab or has switched to another tab or window.',
+    purpose:
+      'Detects if the user is actively viewing your tab or has switched to another tab or window.',
     description:
-      'Hooks into the browser\'s Page Visibility API. When a user switches to another browser tab or minimizes the window, your app knows instantly. You can pause heavy network polling or media to save the user\'s battery and data.',
+      "Hooks into the browser's Page Visibility API. When a user switches to another browser tab or minimizes the window, your app knows instantly. You can pause heavy network polling or media to save the user's battery and data.",
     whenToUse: [
       'Pausing real-time WebSocket polling or live timers when the tab is hidden',
       'Pausing video or audio playback when the user switches tabs',
@@ -288,7 +297,8 @@ export function VideoPlayer() {
   {
     name: '@pareeshy/use-copy-to-clipboard',
     category: 'Browser APIs',
-    purpose: 'Copies text to the clipboard with one function call and provides a temporary "Copied!" confirmation.',
+    purpose:
+      'Copies text to the clipboard with one function call and provides a temporary "Copied!" confirmation.',
     description:
       'Copies text using the modern Clipboard API with fallback support for older browsers. It gives you a `copied` boolean that stays `true` for 2 seconds (customizable), making it effortless to build "Copy Code" or "Copy Link" buttons.',
     whenToUse: [
@@ -322,7 +332,8 @@ export function PromoCode() {
   {
     name: '@pareeshy/use-media-query',
     category: 'React Hooks',
-    purpose: 'Checks CSS media queries (like mobile vs desktop or dark mode) directly in React components.',
+    purpose:
+      'Checks CSS media queries (like mobile vs desktop or dark mode) directly in React components.',
     description:
       'Allows you to conditionally render different JSX depending on screen size or user system preferences, without layout flickering or SSR hydration mismatch warnings.',
     whenToUse: [
@@ -356,7 +367,8 @@ export function Navigation() {
   {
     name: '@pareeshy/use-element-size',
     category: 'UI Utilities',
-    purpose: 'Measures the exact pixel width and height of any HTML element in real time using ResizeObserver.',
+    purpose:
+      'Measures the exact pixel width and height of any HTML element in real time using ResizeObserver.',
     description:
       'Attaches an efficient ResizeObserver to any DOM element and returns its exact width and height. When the window or parent container resizes, the dimensions update automatically without causing slow layout thrashing.',
     whenToUse: [
@@ -382,12 +394,14 @@ export function ChartContainer() {
     </div>
   );
 }`,
-    apiSummary: 'useElementSize<E extends HTMLElement>({ box?, initialSize? }): [ref, { width, height }]'
+    apiSummary:
+      'useElementSize<E extends HTMLElement>({ box?, initialSize? }): [ref, { width, height }]'
   },
   {
     name: '@pareeshy/use-optimistic-action',
     category: 'State Management',
-    purpose: 'Updates the UI instantly before the server responds, and automatically rolls back if the API fails.',
+    purpose:
+      'Updates the UI instantly before the server responds, and automatically rolls back if the API fails.',
     description:
       'When users click "Like" or "Bookmark" on modern apps like Twitter, the icon fills immediately without waiting for server latency. If the network request fails, the state automatically rolls back and lets the user retry. This hook manages that entire workflow.',
     whenToUse: [
@@ -422,7 +436,8 @@ export function LikeButton({ initialLikes }: { initialLikes: number }) {
     </button>
   );
 }`,
-    apiSummary: 'useOptimisticAction(initialState, actionFn, { update, rollback?, onSuccess?, onError? })'
+    apiSummary:
+      'useOptimisticAction(initialState, actionFn, { update, rollback?, onSuccess?, onError? })'
   },
   {
     name: '@pareeshy/use-persisted-state',
@@ -558,14 +573,16 @@ export function ScoreTracker() {
     </div>
   );
 }`,
-    apiSummary: 'useValueHistory<T>(val, { maxSize?, isEqual? }): { current, previous, history, clear }'
+    apiSummary:
+      'useValueHistory<T>(val, { maxSize?, isEqual? }): { current, previous, history, clear }'
   },
   {
     name: '@pareeshy/use-permission',
     category: 'Browser APIs',
-    purpose: 'Checks and monitors browser permission states (camera, mic, location, notifications).',
+    purpose:
+      'Checks and monitors browser permission states (camera, mic, location, notifications).',
     description:
-      'Interfaces cleanly with the browser\'s Permissions API. It tells you whether a permission is granted, denied, or in prompt mode, so you can display helpful user instructions instead of letting actions fail silently.',
+      "Interfaces cleanly with the browser's Permissions API. It tells you whether a permission is granted, denied, or in prompt mode, so you can display helpful user instructions instead of letting actions fail silently.",
     whenToUse: [
       'Showing an "Enable Microphone" banner before joining a video call',
       'Checking if Web Push notifications are allowed or blocked in settings',
@@ -592,16 +609,18 @@ export function LocationWidget() {
     </button>
   );
 }`,
-    apiSummary: 'usePermission(permissionName): { state: PermissionState, isSupported: boolean, isLoading: boolean }'
+    apiSummary:
+      'usePermission(permissionName): { state: PermissionState, isSupported: boolean, isLoading: boolean }'
   },
   {
     name: '@pareeshy/use-web-worker',
     category: 'Performance',
-    purpose: 'Runs heavy computations in a background Web Worker thread without freezing the React UI.',
+    purpose:
+      'Runs heavy computations in a background Web Worker thread without freezing the React UI.',
     description:
       'JavaScript runs on a single thread, so heavy computations (like sorting 100,000 items or calculating hashes) will freeze the browser and make buttons unresponsive. This hook offloads that work to a separate Web Worker thread effortlessly.',
     whenToUse: [
-      'Parsing large CSV, JSON, or Excel files without freezing the user\'s screen',
+      "Parsing large CSV, JSON, or Excel files without freezing the user's screen",
       'Running image manipulation, cryptography, or hashing in the background',
       'Sorting and filtering massive datasets with thousands of rows'
     ],
@@ -635,7 +654,8 @@ export function PrimeCalculator() {
   {
     name: '@pareeshy/use-undo-redo',
     category: 'State Management',
-    purpose: 'Adds full Undo (Ctrl+Z) and Redo (Ctrl+Y) functionality to any state with history limits.',
+    purpose:
+      'Adds full Undo (Ctrl+Z) and Redo (Ctrl+Y) functionality to any state with history limits.',
     description:
       'Maintains a history timeline for your state. Whenever state updates, earlier snapshots are saved on an undo stack. It provides `undo()`, `redo()`, `canUndo`, and `canRedo` ready to connect to toolbar buttons.',
     whenToUse: [
@@ -666,16 +686,18 @@ export function NoteEditor() {
     </div>
   );
 }`,
-    apiSummary: 'useUndoRedo<T>(initial, { maxHistory? }): [state, setState, { undo, redo, canUndo, canRedo, clear }]'
+    apiSummary:
+      'useUndoRedo<T>(initial, { maxHistory? }): [state, setState, { undo, redo, canUndo, canRedo, clear }]'
   },
   {
     name: '@pareeshy/auto-ellipsis',
     category: 'UI Utilities',
-    purpose: 'Truncates multi-line text cleanly (e.g. 3 lines) with an accessible "Read more / Read less" toggle.',
+    purpose:
+      'Truncates multi-line text cleanly (e.g. 3 lines) with an accessible "Read more / Read less" toggle.',
     description:
       'Standard CSS line-clamp often cuts words awkwardly or lacks dynamic measurement. This component measures text in real-time, displays an ellipsis only when text actually overflows, and provides a smooth expandable toggle.',
     whenToUse: [
-      'Product descriptions and review cards that shouldn\'t occupy too much vertical space',
+      "Product descriptions and review cards that shouldn't occupy too much vertical space",
       'Blog post cards or news feed summary snippets',
       'User comments with an expandable "Read more" toggle'
     ],
@@ -701,7 +723,8 @@ export function ProductReview({ reviewText }: { reviewText: string }) {
   {
     name: '@pareeshy/smart-search',
     category: 'Search & Data',
-    purpose: 'Fuzzy search with typo tolerance, highlighted matching letters, and keyboard navigation.',
+    purpose:
+      'Fuzzy search with typo tolerance, highlighted matching letters, and keyboard navigation.',
     description:
       'Enables lightning-fast in-memory client-side search across product catalogs, users, or articles. Even if a user makes a typo (e.g. "hedphones" instead of "headphones"), fuzzy matching finds the item, highlights the matching characters, and supports Up/Down arrow keys.',
     whenToUse: [
@@ -746,12 +769,14 @@ export function ItemSearch({ items }) {
     </div>
   );
 }`,
-    apiSummary: 'useSmartSearch({ items, keys, debounceMs? }), fuzzyMatch(target, query), highlightMatches(text, query)'
+    apiSummary:
+      'useSmartSearch({ items, keys, debounceMs? }), fuzzyMatch(target, query), highlightMatches(text, query)'
   },
   {
     name: '@pareeshy/file-validator',
     category: 'Files & Images',
-    purpose: 'Validates files client-side before upload (size limits, real MIME types via magic bytes, dimensions).',
+    purpose:
+      'Validates files client-side before upload (size limits, real MIME types via magic bytes, dimensions).',
     description:
       'Never let users wait for a huge file upload only for the server to reject it! This checks file size, inspects the true file type using "magic byte signatures" (preventing users from renaming an .exe to .png), and verifies image dimensions before uploading.',
     whenToUse: [
@@ -790,7 +815,8 @@ export function FileUploader() {
   {
     name: '@pareeshy/image-compressor',
     category: 'Files & Images',
-    purpose: 'Shrinks image file sizes in the browser using HTML5 Canvas before uploading to your server.',
+    purpose:
+      'Shrinks image file sizes in the browser using HTML5 Canvas before uploading to your server.',
     description:
       'Modern smartphones take 10MB to 20MB photos. Uploading these wastes user mobile data and server storage. This utility resizes and compresses JPEG, PNG, or WebP images client-side in milliseconds, often reducing a 10MB image down to 400KB with virtually no visible loss in quality.',
     whenToUse: [
@@ -860,12 +886,14 @@ export function ImageInspector() {
 
   return <input type="file" accept="image/*" onChange={checkDimensions} />;
 }`,
-    apiSummary: 'getImageDimensions(source: File | Blob | string): Promise<{ width, height, aspectRatio, orientation }>'
+    apiSummary:
+      'getImageDimensions(source: File | Blob | string): Promise<{ width, height, aspectRatio, orientation }>'
   },
   {
     name: '@pareeshy/browser-storage',
     category: 'State Management',
-    purpose: 'One unified, simple API to read/write from localStorage, sessionStorage, memory, or IndexedDB.',
+    purpose:
+      'One unified, simple API to read/write from localStorage, sessionStorage, memory, or IndexedDB.',
     description:
       'Different browser storage mechanisms have inconsistent APIs (some synchronous, IndexedDB is event-based and complex). This library gives you one clean `get()`, `set()`, and `remove()` interface that works across any storage backend you choose.',
     whenToUse: [
@@ -893,7 +921,8 @@ async function saveProjects() {
   {
     name: '@pareeshy/safe-json',
     category: 'Developer Experience',
-    purpose: 'Safely parse and stringify JSON without ever throwing crash errors or choking on circular references.',
+    purpose:
+      'Safely parse and stringify JSON without ever throwing crash errors or choking on circular references.',
     description:
       'Standard `JSON.parse()` crashes your entire app with an unhandled exception if given invalid or corrupted JSON. `safeParse` guarantees your app never crashes, returning a fallback default value and a clear `{ success, data }` result instead.',
     whenToUse: [
@@ -917,14 +946,16 @@ const { success, data } = safeParse(badData, { theme: 'dark' });
 const obj: any = { name: 'App' };
 obj.self = obj; // Circular reference!
 const jsonString = safeStringifyCircular(obj);`,
-    apiSummary: 'safeParse<T>(raw, fallback), safeParseValue<T>(raw, fallback), safeStringifyCircular(obj)'
+    apiSummary:
+      'safeParse<T>(raw, fallback), safeParseValue<T>(raw, fallback), safeStringifyCircular(obj)'
   },
   {
     name: '@pareeshy/url-state',
     category: 'State Management',
-    purpose: 'Syncs React state with URL search parameters (?page=2&tab=settings) so pages are shareable.',
+    purpose:
+      'Syncs React state with URL search parameters (?page=2&tab=settings) so pages are shareable.',
     description:
-      'When users filter a table or change pages, they expect copying and sharing the URL link to take a teammate to the exact same view. This hook synchronizes state directly with the browser\'s URL query string while handling types (numbers, booleans, arrays) automatically.',
+      "When users filter a table or change pages, they expect copying and sharing the URL link to take a teammate to the exact same view. This hook synchronizes state directly with the browser's URL query string while handling types (numbers, booleans, arrays) automatically.",
     whenToUse: [
       'Pagination and sort orders (?page=2&sort=asc)',
       'Search filters and category checkboxes on e-commerce listings',
@@ -950,12 +981,14 @@ export function ProductCatalog() {
     </div>
   );
 }`,
-    apiSummary: 'useUrlState<T>(key, defaultVal, { historyMode?: "push" | "replace", serialize?, deserialize? })'
+    apiSummary:
+      'useUrlState<T>(key, defaultVal, { historyMode?: "push" | "replace", serialize?, deserialize? })'
   },
   {
     name: '@pareeshy/form-dirty-state',
     category: 'UI Utilities',
-    purpose: 'Tracks whether form fields were modified by the user, and warns before leaving with unsaved changes.',
+    purpose:
+      'Tracks whether form fields were modified by the user, and warns before leaving with unsaved changes.',
     description:
       'Performs deep comparison between your form\'s current values and original values. It tells you if the form is "dirty" (edited), lists exactly which fields were changed, and can trigger the browser\'s "Leave site? Unsaved changes will be lost" confirmation prompt.',
     whenToUse: [
@@ -994,7 +1027,8 @@ export function EditProfile({ user }) {
   {
     name: '@pareeshy/scroll-lock',
     category: 'UI Utilities',
-    purpose: 'Locks body scrolling when a modal is open, preventing page scroll without layout shifting.',
+    purpose:
+      'Locks body scrolling when a modal is open, preventing page scroll without layout shifting.',
     description:
       'When you open a popup modal, scrolling your mouse wheel often scrolls the background page underneath it. Simple CSS `overflow: hidden` causes an ugly layout jump when the browser scrollbar disappears. This hook locks scrolling cleanly and compensates for scrollbar width.',
     whenToUse: [
@@ -1031,12 +1065,14 @@ export function Modal() {
     </div>
   );
 }`,
-    apiSummary: 'useScrollLock(locked: boolean, target?), lockScroll(target?), unlockScroll(target?), isScrollLocked()'
+    apiSummary:
+      'useScrollLock(locked: boolean, target?), lockScroll(target?), unlockScroll(target?), isScrollLocked()'
   },
   {
     name: '@pareeshy/react-confirm-action',
     category: 'UI Utilities',
-    purpose: 'Replaces ugly browser window.confirm() with beautiful, promise-based confirmation dialogs.',
+    purpose:
+      'Replaces ugly browser window.confirm() with beautiful, promise-based confirmation dialogs.',
     description:
       'Traditional `window.confirm("Are you sure?")` freezes the browser and looks outdated. This library lets you trigger accessible, customizable confirmation dialogs with `const ok = await confirm(...)` right inside your event handlers.',
     whenToUse: [
@@ -1069,12 +1105,14 @@ export function DeleteButton() {
 
   return <button onClick={handleDelete}>🗑️ Delete Project</button>;
 }`,
-    apiSummary: '<ConfirmProvider customDialog?>, useConfirmAction(): (options: ConfirmOptions) => Promise<boolean>'
+    apiSummary:
+      '<ConfirmProvider customDialog?>, useConfirmAction(): (options: ConfirmOptions) => Promise<boolean>'
   },
   {
     name: '@pareeshy/react-shortcuts',
     category: 'Developer Experience',
-    purpose: 'Easy keyboard shortcut manager (Ctrl+S, Cmd+K, Escape) with Mac/Windows key normalization.',
+    purpose:
+      'Easy keyboard shortcut manager (Ctrl+S, Cmd+K, Escape) with Mac/Windows key normalization.',
     description:
       'Easily register hotkeys across your app. It automatically normalizes `mod+s` so it means `Cmd+S` on Mac and `Ctrl+S` on Windows, and safely ignores shortcuts when the user is typing inside an `<input>` or `<textarea>`.',
     whenToUse: [
@@ -1103,16 +1141,18 @@ export function DocumentEditor() {
 
   return <div>Press <strong>Ctrl+S</strong> (or <strong>Cmd+S</strong>) to save!</div>;
 }`,
-    apiSummary: 'useShortcut(combo: string, handler: (e) => void, { enabled?, preventDefault?, ignoreInputs? })'
+    apiSummary:
+      'useShortcut(combo: string, handler: (e) => void, { enabled?, preventDefault?, ignoreInputs? })'
   },
   {
     name: '@pareeshy/react-error-boundary-lite',
     category: 'Developer Experience',
-    purpose: 'Catches runtime JavaScript errors in components and displays a fallback UI instead of a blank white page.',
+    purpose:
+      'Catches runtime JavaScript errors in components and displays a fallback UI instead of a blank white page.',
     description:
       'When an unhandled runtime error happens in React, the entire screen can crash to a blank white page. An Error Boundary catches the crash, renders a friendly "Something went wrong" card with a "Try Again" button, and logs the error to your analytics.',
     whenToUse: [
-      'Wrapping widget cards or third-party embeds so a single crash doesn\'t break the whole app',
+      "Wrapping widget cards or third-party embeds so a single crash doesn't break the whole app",
       'Top-level application crash recovery with user-friendly retry buttons',
       'Reporting frontend errors to monitoring tools like Sentry'
     ],
@@ -1144,7 +1184,8 @@ export function App() {
   {
     name: '@pareeshy/react-file-dropzone-lite',
     category: 'UI Utilities',
-    purpose: 'Creates drag-and-drop file upload zones with visual hover feedback, file filters, and accessibility.',
+    purpose:
+      'Creates drag-and-drop file upload zones with visual hover feedback, file filters, and accessibility.',
     description:
       'Provides a headless hook to turn any container into a drag-and-drop file upload area. It manages dragging states (`isDragActive`), file extension filters, and keyboard Enter/Space triggers without imposing styling constraints.',
     whenToUse: [
@@ -1184,5 +1225,68 @@ export function Dropzone() {
   );
 }`,
     apiSummary: 'useFileDropzone({ onDrop, accept?, multiple?, minSize?, maxSize?, maxFiles? })'
+  },
+  {
+    name: '@pareeshy/internal-utils',
+    category: 'Developer Experience',
+    purpose:
+      'Shared zero-dependency micro-utilities for isBrowser, deep equality check, promise validation, and event cleanup.',
+    description:
+      'Provides high-performance, rock-solid foundational helpers used across the @pareeshy ecosystem: SSR-safe browser detection, recursive deep object equality comparison, robust promise type guarding, and leak-free event cleanup.',
+    whenToUse: [
+      'Checking whether code is executing in SSR/Node or in the browser environment safely',
+      'Comparing deep nested state objects or hook dependency objects without external dependencies',
+      'Checking if an unknown variable is a Promise or Thenable before awaiting'
+    ],
+    framework: 'Agnostic (TS/JS)',
+    browserOnly: false,
+    bundleSize: '0.8 KB',
+    dependencies: '0',
+    status: 'Stable',
+    exampleSnippet: `import { isBrowser, isDeepEqual, isPromise } from '@pareeshy/internal-utils';
+
+if (isBrowser) {
+  const isEqual = isDeepEqual({ user: { id: 1 } }, { user: { id: 1 } });
+  console.log('Deep equal:', isEqual); // true
+}`,
+    apiSummary:
+      'isBrowser: boolean, isDeepEqual(a, b): boolean, isPromise(val): boolean, noop(): void'
+  },
+  {
+    name: '@pareeshy/ai-mock-assistant',
+    category: 'Developer Experience',
+    purpose:
+      'Deterministic local mock AI assistant demonstrating streaming, tool calling, token latency, and error recovery.',
+    description:
+      'A powerful offline AI simulation engine designed for frontend UI/UX testing. Simulates character-by-character token streaming, LLM reasoning thoughts, autonomous tool execution (calculator, fetch, search), and realistic network latencies without requiring API keys.',
+    whenToUse: [
+      'Prototyping generative AI chat interfaces, copilots, and streaming dashboards',
+      'Testing tool-calling UIs and agentic approval workflows without cloud API costs',
+      'Developing fallback error recovery states and abort/cancellation flows'
+    ],
+    framework: 'React >=18',
+    browserOnly: true,
+    bundleSize: '2.4 KB',
+    dependencies: '0',
+    status: 'Stable',
+    exampleSnippet: `import { useAiAssistant } from '@pareeshy/ai-mock-assistant';
+
+export function ChatWidget() {
+  const { messages, input, setInput, sendMessage, isStreaming, stop } = useAiAssistant({
+    streamSpeed: 25,
+    enableToolCalling: true
+  });
+
+  return (
+    <div>
+      {messages.map((m, i) => (
+        <div key={i}><strong>{m.role}:</strong> {m.content}</div>
+      ))}
+      <input value={input} onChange={(e) => setInput(e.target.value)} />
+      <button onClick={() => sendMessage(input)}>Send</button>
+    </div>
+  );
+}`,
+    apiSummary: 'useAiAssistant({ streamSpeed?, enableToolCalling?, onToolCall? })'
   }
 ];

@@ -1,18 +1,13 @@
 export type SafeParseResult<T> =
-  | { success: true; data: T; error?: never }
-  | { success: false; data?: T; error: Error };
+  { success: true; data: T; error?: never } | { success: false; data?: T; error: Error };
 
 export type SafeStringifyResult =
-  | { success: true; data: string; error?: never }
-  | { success: false; data?: never; error: Error };
+  { success: true; data: string; error?: never } | { success: false; data?: never; error: Error };
 
 /**
  * Safely parses a JSON string without throwing runtime errors.
  */
-export function safeParse<T = unknown>(
-  raw: string,
-  fallback?: T
-): SafeParseResult<T> {
+export function safeParse<T = unknown>(raw: string, fallback?: T): SafeParseResult<T> {
   if (typeof raw !== 'string') {
     return {
       success: false,
@@ -58,10 +53,7 @@ export function safeStringify(
 /**
  * Stringifies objects with circular references by replacing repeated references with "[Circular]".
  */
-export function safeStringifyCircular(
-  value: unknown,
-  space?: string | number
-): string {
+export function safeStringifyCircular(value: unknown, space?: string | number): string {
   const seen = new WeakSet();
 
   return JSON.stringify(

@@ -11,7 +11,7 @@
   --stripe-border: #e3e8ee;
   --stripe-border-focus: #635bff;
 
-  /* Stripe Blurple & Brand Accents */
+  /* Brand Accents */
   --primary: #635bff;
   --primary-hover: #533afd;
   --primary-light: rgba(99, 91, 255, 0.08);
@@ -21,16 +21,15 @@
   --text-head: #0a2540;
   --text-body: #425466;
   --text-muted: #697386;
-  --text-code: #e3e8ee;
 
-  /* Badges & Status */
+  /* Status */
   --success: #059669;
   --success-bg: rgba(5, 150, 105, 0.08);
   --success-border: rgba(5, 150, 105, 0.2);
   --warning: #d97706;
   --warning-bg: rgba(217, 119, 6, 0.08);
 
-  /* Code Panel (Always dark & sleek like Stripe) */
+  /* Code Panel — always dark */
   --code-bg: #0a1628;
   --code-header: #060e1b;
   --code-border: #1a2942;
@@ -49,7 +48,6 @@
 }
 
 [data-theme='dark'] {
-  /* Stripe Dark Mode */
   --stripe-bg: #0b1120;
   --stripe-bg-subtle: #070c17;
   --stripe-bg-surface: #111b2e;
@@ -79,7 +77,9 @@
   --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -104,11 +104,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code, pre {
+code,
+pre {
   font-family: var(--font-mono);
 }
 
-/* Custom Scrollbars */
+/* Custom scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -153,7 +154,7 @@ code, pre {
   border-radius: 0 6px 6px 0;
 }
 
-/* Stripe Callout box */
+/* Callout box */
 .stripe-callout {
   background-color: var(--primary-light);
   border: 1px solid var(--primary-border);
@@ -163,7 +164,7 @@ code, pre {
   margin-bottom: 24px;
 }
 
-/* Terminal code container */
+/* Terminal code card */
 .stripe-code-card {
   background-color: var(--code-bg);
   border: 1px solid var(--code-border);
@@ -172,7 +173,7 @@ code, pre {
   overflow: hidden;
 }
 
-/* Command Palette Overlay */
+/* Command Palette overlay */
 .cmd-palette-overlay {
   position: fixed;
   inset: 0;
@@ -182,7 +183,7 @@ code, pre {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 14vh;
+  padding: 14vh 16px 0;
   z-index: 200;
 }
 
@@ -199,5 +200,100 @@ code, pre {
 
 @keyframes cmdSlide {
   from { opacity: 0; transform: translateY(-10px) scale(0.98); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Main app layout */
+.app-main-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  width: 100%;
+}
+
+/* Two-column docs layout */
+.docs-columns-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 440px;
+  align-items: start;
+}
+
+/* Mobile hamburger: hidden on desktop, shown via flex on mobile */
+.mobile-sidebar-toggle-btn {
+  display: none;
+}
+
+/* Category pills horizontal scrollbar */
+.category-pills-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 116, 139, 0.3) transparent;
+}
+.category-pills-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.category-pills-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.category-pills-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 4px;
+}
+.category-pills-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* ─── Responsive breakpoints ─────────────────────────────────── */
+
+/* Collapse right code panel below 1180px */
+@media (max-width: 1180px) {
+  .docs-columns-layout {
+    grid-template-columns: 1fr;
+  }
+  /* Hide right aside (code panel) on narrow viewports */
+  .docs-columns-layout > aside {
+    display: none;
+  }
+}
+
+/* Mobile sidebar drawer below 960px */
+@media (max-width: 960px) {
+  .app-main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-sidebar-toggle-btn {
+    display: flex;
+  }
+
+  /* Hide "Search..." text label to save space */
+  .search-label {
+    display: none;
+  }
+
+  .app-sidebar {
+    position: fixed !important;
+    top: 60px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 290px !important;
+    height: calc(100vh - 60px) !important;
+    z-index: 100 !important;
+    transform: translateX(-100%);
+    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .app-sidebar.mobile-open {
+    transform: translateX(0) !important;
+  }
+}
+
+/* Compact docs padding on small screens */
+@media (max-width: 640px) {
+  .docs-columns-layout > main {
+    padding: 24px 20px !important;
+  }
+
+  .playground-stage-wrapper > div:first-child {
+    padding: 16px !important;
+  }
 }

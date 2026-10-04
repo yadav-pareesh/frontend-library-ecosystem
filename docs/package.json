@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@pareeshy/form-dirty-state": "workspace:*",
     "@pareeshy/image-compressor": "workspace:*",
     "@pareeshy/image-dimensions": "workspace:*",
+    "@pareeshy/internal-utils": "workspace:*",
     "@pareeshy/react-confirm-action": "workspace:*",
     "@pareeshy/react-error-boundary-lite": "workspace:*",
     "@pareeshy/react-file-dropzone-lite": "workspace:*",

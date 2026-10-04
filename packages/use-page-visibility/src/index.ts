@@ -10,9 +10,7 @@ export function getDocumentVisibility(): DocumentVisibilityState {
  * Returns whether the document is currently visible (`document.visibilityState === 'visible'`).
  */
 export function usePageVisibility(onChange?: (visible: boolean) => void): boolean {
-  const [isVisible, setIsVisible] = useState<boolean>(() =>
-    getDocumentVisibility() === 'visible'
-  );
+  const [isVisible, setIsVisible] = useState<boolean>(() => getDocumentVisibility() === 'visible');
 
   const onChangeRef = useRef(onChange);
   onChangeRef.current = onChange;

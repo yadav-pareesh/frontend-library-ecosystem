@@ -18,8 +18,12 @@ export interface UseFileDropzoneOptions {
 }
 
 export interface UseFileDropzoneReturn {
-  getRootProps: (props?: React.HTMLAttributes<HTMLDivElement>) => React.HTMLAttributes<HTMLDivElement>;
-  getInputProps: (props?: React.InputHTMLAttributes<HTMLInputElement>) => React.InputHTMLAttributes<HTMLInputElement>;
+  getRootProps: (
+    props?: React.HTMLAttributes<HTMLDivElement>
+  ) => React.HTMLAttributes<HTMLDivElement>;
+  getInputProps: (
+    props?: React.InputHTMLAttributes<HTMLInputElement>
+  ) => React.InputHTMLAttributes<HTMLInputElement>;
   isDragActive: boolean;
   isDragAccept: boolean;
   isDragReject: boolean;
@@ -46,9 +50,7 @@ function matchesAccept(file: File, acceptStr?: string): boolean {
   return false;
 }
 
-export function useFileDropzone(
-  options: UseFileDropzoneOptions
-): UseFileDropzoneReturn {
+export function useFileDropzone(options: UseFileDropzoneOptions): UseFileDropzoneReturn {
   const {
     onDrop,
     accept,
@@ -155,7 +157,7 @@ export function useFileDropzone(
   );
 
   const handleClick = useCallback(
-    (e: React.MouseEvent) => {
+    (_e?: React.MouseEvent) => {
       if (disabled || noClick) return;
       open();
     },

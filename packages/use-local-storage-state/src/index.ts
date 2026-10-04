@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface StorageSerializer<T> {
@@ -50,9 +50,7 @@ export function useLocalStorageState<T>(
   const [error, setError] = useState<unknown | null>(null);
 
   const getInitialValue = useCallback((): T => {
-    return typeof defaultValue === 'function'
-      ? (defaultValue as () => T)()
-      : defaultValue;
+    return typeof defaultValue === 'function' ? (defaultValue as () => T)() : defaultValue;
   }, [defaultValue]);
 
   const readValueFromStorage = useCallback((): T => {

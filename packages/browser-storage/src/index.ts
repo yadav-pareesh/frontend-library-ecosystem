@@ -39,11 +39,7 @@ export function createWebStorageAdapter<T = unknown>(
   type: 'local' | 'session',
   options: AdapterOptions = {}
 ): StorageAdapter<T> {
-  const {
-    prefix = '',
-    serialize = JSON.stringify,
-    deserialize = JSON.parse
-  } = options;
+  const { prefix = '', serialize = JSON.stringify, deserialize = JSON.parse } = options;
 
   const getStorage = (): Storage | null => {
     if (!isBrowser) return null;

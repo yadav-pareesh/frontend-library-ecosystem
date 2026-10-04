@@ -1,7 +1,7 @@
 {
   "name": "@pareeshy/internal-utils",
-  "version": "1.0.1",
-  "description": "Internal utilities for @pareesh packages",
+  "version": "1.0.0",
+  "description": "Internal utilities for @pareeshy packages",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

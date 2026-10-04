@@ -34,9 +34,7 @@ export interface OnlineQueueResult<T> {
   processQueue: () => Promise<void>;
 }
 
-export function useOnlineQueue<T>(
-  options: UseOnlineQueueOptions<T>
-): OnlineQueueResult<T> {
+export function useOnlineQueue<T>(options: UseOnlineQueueOptions<T>): OnlineQueueResult<T> {
   const {
     storageKey,
     onProcess,
@@ -104,30 +102,27 @@ export function useOnlineQueue<T>(
     setItems([]);
   }, []);
 
-  const enqueue = useCallback(
-    (payload: T, customId?: string): string => {
-      const id = customId || `queue_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+  const enqueue = useCallback((payload: T, customId?: string): string => {
+    const id = customId || `queue_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
 
-      if (itemsRef.current.some((item) => item.id === id)) {
-        return id;
-      }
-
-      const next = [
-        ...itemsRef.current,
-        {
-          id,
-          payload,
-          createdAt: Date.now(),
-          retryCount: 0
-        }
-      ];
-      itemsRef.current = next;
-      setItems(next);
-
+    if (itemsRef.current.some((item) => item.id === id)) {
       return id;
-    },
-    []
-  );
+    }
+
+    const next = [
+      ...itemsRef.current,
+      {
+        id,
+        payload,
+        createdAt: Date.now(),
+        retryCount: 0
+      }
+    ];
+    itemsRef.current = next;
+    setItems(next);
+
+    return id;
+  }, []);
 
   const processQueue = useCallback(async () => {
     if (isProcessingRef.current || !navigator.onLine || itemsRef.current.length === 0) {
@@ -158,9 +153,7 @@ export function useOnlineQueue<T>(
           } else {
             // Increment retry count and delay
             itemsRef.current = itemsRef.current.map((i) =>
-              i.id === item.id
-                ? { ...i, retryCount: nextRetry, lastError: errorMsg }
-                : i
+              i.id === item.id ? { ...i, retryCount: nextRetry, lastError: errorMsg } : i
             );
             setItems(itemsRef.current);
             const delay = retryDelayMs * Math.pow(backoffMultiplier, item.retryCount);

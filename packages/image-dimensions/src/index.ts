@@ -9,9 +9,7 @@ export interface ImageDimensions {
   orientation: ImageOrientation;
 }
 
-export function getImageDimensions(
-  source: File | Blob | string
-): Promise<ImageDimensions> {
+export function getImageDimensions(source: File | Blob | string): Promise<ImageDimensions> {
   if (!isBrowser) {
     return Promise.reject(
       new Error('getImageDimensions is only supported in browser environments.')

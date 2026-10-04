@@ -1,23 +1,15 @@
 {
   "name": "@pareeshy/auto-ellipsis",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Intelligent text truncation component and hook for React supporting single-line, multi-line, ResizeObserver responsive reflow, and expand/collapse accessibility.",
-  "author": "Pareesh Yadav",
+  "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
     "directory": "packages/auto-ellipsis"
   },
-  "keywords": [
-    "react",
-    "component",
-    "hooks",
-    "ellipsis",
-    "text-truncation",
-    "clamp",
-    "tooltip"
-  ],
+  "keywords": ["react", "component", "hooks", "ellipsis", "text-truncation", "clamp", "tooltip"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -28,10 +20,7 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

@@ -1,22 +1,15 @@
 {
   "name": "@pareeshy/use-page-visibility",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Simple reactive API for document visibility state with SSR safety and change callbacks.",
-  "author": "Pareesh Yadav",
+  "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-page-visibility"
   },
-  "keywords": [
-    "react",
-    "hooks",
-    "visibility",
-    "page-visibility",
-    "document",
-    "tab-switch"
-  ],
+  "keywords": ["react", "hooks", "visibility", "page-visibility", "document", "tab-switch"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,10 +20,7 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

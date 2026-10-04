@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { isBrowser } from '@pareeshy/internal-utils';
 
 export interface StorageSerializer<T> {
@@ -17,7 +17,7 @@ export interface LocalStorageControls {
   error: unknown | null;
 }
 
-const CUSTOM_STORAGE_EVENT = 'pareeshy:local-storage-change';
+const CUSTOM_STORAGE_EVENT = 'pareesh:local-storage-change';
 
 interface CustomStorageDetail {
   key: string;
@@ -50,7 +50,9 @@ export function useLocalStorageState<T>(
   const [error, setError] = useState<unknown | null>(null);
 
   const getInitialValue = useCallback((): T => {
-    return typeof defaultValue === 'function' ? (defaultValue as () => T)() : defaultValue;
+    return typeof defaultValue === 'function'
+      ? (defaultValue as () => T)()
+      : defaultValue;
   }, [defaultValue]);
 
   const readValueFromStorage = useCallback((): T => {

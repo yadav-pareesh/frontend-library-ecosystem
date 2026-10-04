@@ -1,23 +1,15 @@
 {
   "name": "@pareeshy/use-idle-detection",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "User inactivity detection hook for React supporting mouse, keyboard, touch, scroll, pointer, and visibility changes with configurable timeout.",
-  "author": "Pareesh Yadav",
+  "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-idle-detection"
   },
-  "keywords": [
-    "react",
-    "hooks",
-    "idle",
-    "timeout",
-    "inactivity",
-    "user-activity",
-    "events"
-  ],
+  "keywords": ["react", "hooks", "idle", "timeout", "inactivity", "user-activity", "events"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -28,10 +20,7 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

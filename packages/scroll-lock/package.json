@@ -1,22 +1,15 @@
 {
   "name": "@pareeshy/scroll-lock",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Reliable scroll locking library and React hook with scrollbar shift compensation, nested locks support, iOS touch handling, and clean restoration.",
-  "author": "Pareesh Yadav",
+  "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
     "directory": "packages/scroll-lock"
   },
-  "keywords": [
-    "scroll-lock",
-    "modal",
-    "drawer",
-    "scrollbar-gutter",
-    "layout-shift",
-    "ios-scroll"
-  ],
+  "keywords": ["scroll-lock", "modal", "drawer", "scrollbar-gutter", "layout-shift", "ios-scroll"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,10 +20,7 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

@@ -114,7 +114,7 @@ export async function compressImage(
     const file = new File([blob], fileName, { type: mimeType, lastModified: Date.now() });
     const originalSize = source.size;
     const compressedSize = blob.size;
-    const compressionRatio = originalSize > 0 ? (compressedSize / originalSize) : 1;
+    const compressionRatio = originalSize > 0 ? compressedSize / originalSize : 1;
 
     return {
       file,

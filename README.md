@@ -1,4 +1,4 @@
-# @pareesh
+# @pareeshy
 
 > A lightweight, modular collection of 32 production-grade frontend utilities, React hooks, and UI libraries designed for modern web applications.
 
@@ -118,4 +118,4 @@ pnpm changeset publish
 
 ## 📄 License
 
-MIT © Pareesh
+MIT © Pareesh Yadav

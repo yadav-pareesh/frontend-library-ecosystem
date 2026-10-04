@@ -113,7 +113,7 @@ export const AutoEllipsis: React.FC<AutoEllipsisProps> = ({
   expandable = false,
   expandText = 'Read more',
   collapseText = 'Show less',
-  ellipsis = '...',
+  ellipsis: _ellipsis = '...',
   renderTooltip,
   className,
   style,

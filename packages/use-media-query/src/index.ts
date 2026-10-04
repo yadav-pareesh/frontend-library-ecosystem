@@ -8,10 +8,7 @@ export interface UseMediaQueryOptions {
   initializeWithValue?: boolean;
 }
 
-export function useMediaQuery(
-  query: string,
-  options: UseMediaQueryOptions = {}
-): boolean {
+export function useMediaQuery(query: string, options: UseMediaQueryOptions = {}): boolean {
   const { defaultValue = false, initializeWithValue = true } = options;
 
   const [matches, setMatches] = useState<boolean>(() => {
@@ -60,7 +57,8 @@ export function useMediaQueries<T extends Record<string, string>>(
     const initial = {} as { [K in keyof T]: boolean };
     for (const key of Object.keys(queryMap) as (keyof T)[]) {
       const q = queryMap[key];
-      initial[key] = isBrowser && 'matchMedia' in window && q ? window.matchMedia(q).matches : false;
+      initial[key] =
+        isBrowser && 'matchMedia' in window && q ? window.matchMedia(q).matches : false;
     }
     return initial;
   });

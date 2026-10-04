@@ -7,6 +7,6 @@ export default defineConfig({
     isolate: true,
     maxWorkers: 2,
     minWorkers: 1,
-    include: ['packages/*/tests/**/*.test.{ts,tsx}']
+    include: ['packages/*/tests/**/*.test.{ts,tsx}', 'docs/tests/**/*.test.{ts,tsx}']
   }
 });

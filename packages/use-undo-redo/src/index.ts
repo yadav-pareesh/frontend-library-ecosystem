@@ -30,9 +30,7 @@ export function useUndoRedo<T>(
 
   const [state, setState] = useState<UndoRedoState<T>>(() => {
     const initial =
-      typeof initialPresent === 'function'
-        ? (initialPresent as () => T)()
-        : initialPresent;
+      typeof initialPresent === 'function' ? (initialPresent as () => T)() : initialPresent;
     return {
       past: [],
       present: initial,

@@ -85,9 +85,7 @@ export function useUrlState<T>(
   const setUrlState = useCallback(
     (nextOrFn: T | ((prev: T) => T)) => {
       const nextValue =
-        typeof nextOrFn === 'function'
-          ? (nextOrFn as (prev: T) => T)(stateRef.current)
-          : nextOrFn;
+        typeof nextOrFn === 'function' ? (nextOrFn as (prev: T) => T)(stateRef.current) : nextOrFn;
 
       setState(nextValue);
       updateUrl(nextValue);

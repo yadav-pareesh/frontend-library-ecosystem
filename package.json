@@ -1,7 +1,7 @@
 {
-  "name": "pareesh-ecosystem-root",
+  "name": "pareeshy-ecosystem-root",
   "private": true,
-  "description": "Production-grade, scalable frontend utility and library package ecosystem under the @pareesh scope",
+  "description": "Production-grade, scalable frontend utility and library package ecosystem under the @pareeshy scope",
   "packageManager": "pnpm@12.6.0",
   "engines": {
     "node": ">=18.0.0"

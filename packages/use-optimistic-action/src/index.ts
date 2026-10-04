@@ -26,8 +26,6 @@ export function useOptimisticAction<TState, TPayload, TResult = void>(
   action: (payload: TPayload) => Promise<TResult>,
   options: OptimisticActionOptions<TState, TPayload, TResult>
 ): OptimisticActionReturn<TState, TPayload> {
-  const { update, rollback, onSuccess, onError } = options;
-
   const [state, setState] = useState<TState>(initialState);
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState<Error | null>(null);
@@ -58,41 +56,38 @@ export function useOptimisticAction<TState, TPayload, TResult = void>(
     lastRollbackStateRef.current = initialState;
   }, [initialState]);
 
-  const execute = useCallback(
-    async (payload: TPayload): Promise<boolean> => {
-      const prevState = stateRef.current;
-      lastRollbackStateRef.current = prevState;
-      lastPayloadRef.current = payload;
+  const execute = useCallback(async (payload: TPayload): Promise<boolean> => {
+    const prevState = stateRef.current;
+    lastRollbackStateRef.current = prevState;
+    lastPayloadRef.current = payload;
 
-      // Optimistic update
-      const nextState = optionsRef.current.update(prevState, payload);
-      setState(nextState);
-      setIsPending(true);
-      setError(null);
+    // Optimistic update
+    const nextState = optionsRef.current.update(prevState, payload);
+    setState(nextState);
+    setIsPending(true);
+    setError(null);
 
-      try {
-        const result = await actionRef.current(payload);
-        setIsPending(false);
-        optionsRef.current.onSuccess?.(result, payload);
-        return true;
-      } catch (err) {
-        const actionError = err instanceof Error ? err : new Error(String(err));
-        setError(actionError);
-        setIsPending(false);
+    try {
+      const result = await actionRef.current(payload);
+      setIsPending(false);
+      optionsRef.current.onSuccess?.(result, payload);
+      return true;
+    } catch (err) {
+      const actionError = err instanceof Error ? err : new Error(String(err));
+      setError(actionError);
+      setIsPending(false);
 
-        // Revert or custom rollback
-        if (optionsRef.current.rollback) {
-          setState(optionsRef.current.rollback(prevState, payload, actionError));
-        } else {
-          setState(prevState);
-        }
-
-        optionsRef.current.onError?.(actionError, payload);
-        return false;
+      // Revert or custom rollback
+      if (optionsRef.current.rollback) {
+        setState(optionsRef.current.rollback(prevState, payload, actionError));
+      } else {
+        setState(prevState);
       }
-    },
-    []
-  );
+
+      optionsRef.current.onError?.(actionError, payload);
+      return false;
+    }
+  }, []);
 
   const retry = useCallback(async (): Promise<boolean> => {
     if (lastPayloadRef.current === null) {

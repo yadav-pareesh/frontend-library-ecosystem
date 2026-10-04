@@ -48,12 +48,7 @@ export async function detectMimeFromMagicBytes(file: File): Promise<string | nul
     const bytes = new Uint8Array(buffer);
 
     // PNG: 89 50 4E 47 0D 0A 1A 0A
-    if (
-      bytes[0] === 0x89 &&
-      bytes[1] === 0x50 &&
-      bytes[2] === 0x4e &&
-      bytes[3] === 0x47
-    ) {
+    if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47) {
       return 'image/png';
     }
 
@@ -63,22 +58,12 @@ export async function detectMimeFromMagicBytes(file: File): Promise<string | nul
     }
 
     // GIF: 47 49 46 38
-    if (
-      bytes[0] === 0x47 &&
-      bytes[1] === 0x49 &&
-      bytes[2] === 0x46 &&
-      bytes[3] === 0x38
-    ) {
+    if (bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x38) {
       return 'image/gif';
     }
 
     // PDF: 25 50 44 46 (%PDF)
-    if (
-      bytes[0] === 0x25 &&
-      bytes[1] === 0x50 &&
-      bytes[2] === 0x44 &&
-      bytes[3] === 0x46
-    ) {
+    if (bytes[0] === 0x25 && bytes[1] === 0x50 && bytes[2] === 0x44 && bytes[3] === 0x46) {
       return 'application/pdf';
     }
 
@@ -247,19 +232,35 @@ export async function validateFiles(
       try {
         const { width, height } = await getImageDimensions(file);
         if (options.maxWidth !== undefined && width > options.maxWidth) {
-          addError(file, 'IMAGE_TOO_WIDE', `Image width (${width}px) exceeds max (${options.maxWidth}px).`);
+          addError(
+            file,
+            'IMAGE_TOO_WIDE',
+            `Image width (${width}px) exceeds max (${options.maxWidth}px).`
+          );
           fileHasError = true;
         }
         if (options.minWidth !== undefined && width < options.minWidth) {
-          addError(file, 'IMAGE_TOO_NARROW', `Image width (${width}px) is below min (${options.minWidth}px).`);
+          addError(
+            file,
+            'IMAGE_TOO_NARROW',
+            `Image width (${width}px) is below min (${options.minWidth}px).`
+          );
           fileHasError = true;
         }
         if (options.maxHeight !== undefined && height > options.maxHeight) {
-          addError(file, 'IMAGE_TOO_TALL', `Image height (${height}px) exceeds max (${options.maxHeight}px).`);
+          addError(
+            file,
+            'IMAGE_TOO_TALL',
+            `Image height (${height}px) exceeds max (${options.maxHeight}px).`
+          );
           fileHasError = true;
         }
         if (options.minHeight !== undefined && height < options.minHeight) {
-          addError(file, 'IMAGE_TOO_SHORT', `Image height (${height}px) is below min (${options.minHeight}px).`);
+          addError(
+            file,
+            'IMAGE_TOO_SHORT',
+            `Image height (${height}px) is below min (${options.minHeight}px).`
+          );
           fileHasError = true;
         }
       } catch {

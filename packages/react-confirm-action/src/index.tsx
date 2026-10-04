@@ -25,10 +25,7 @@ export interface ConfirmProviderProps {
   customDialog?: (props: ConfirmRenderProps) => React.ReactNode;
 }
 
-export const ConfirmProvider: React.FC<ConfirmProviderProps> = ({
-  children,
-  customDialog
-}) => {
+export const ConfirmProvider: React.FC<ConfirmProviderProps> = ({ children, customDialog }) => {
   const [dialogState, setDialogState] = useState<ConfirmDialogOptions | null>(null);
   const resolverRef = useRef<((value: boolean) => void) | null>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -78,8 +75,8 @@ export const ConfirmProvider: React.FC<ConfirmProviderProps> = ({
   return (
     <ConfirmContext.Provider value={{ confirm }}>
       {children}
-      {dialogState && (
-        customDialog ? (
+      {dialogState &&
+        (customDialog ? (
           customDialog({
             ...dialogState,
             isOpen: true,
@@ -154,8 +151,7 @@ export const ConfirmProvider: React.FC<ConfirmProviderProps> = ({
               </div>
             </div>
           </div>
-        )
-      )}
+        ))}
     </ConfirmContext.Provider>
   );
 };

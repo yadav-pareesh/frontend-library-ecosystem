@@ -16,7 +16,7 @@ export interface SessionStorageControls {
   error: unknown | null;
 }
 
-const CUSTOM_SESSION_STORAGE_EVENT = 'pareesh:session-storage-change';
+const CUSTOM_SESSION_STORAGE_EVENT = 'pareeshy:session-storage-change';
 
 interface CustomSessionStorageDetail {
   key: string;
@@ -48,9 +48,7 @@ export function useSessionStorageState<T>(
   const [error, setError] = useState<unknown | null>(null);
 
   const getInitialValue = useCallback((): T => {
-    return typeof defaultValue === 'function'
-      ? (defaultValue as () => T)()
-      : defaultValue;
+    return typeof defaultValue === 'function' ? (defaultValue as () => T)() : defaultValue;
   }, [defaultValue]);
 
   const readValueFromStorage = useCallback((): T => {

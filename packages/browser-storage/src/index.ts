@@ -39,11 +39,7 @@ export function createWebStorageAdapter<T = unknown>(
   type: 'local' | 'session',
   options: AdapterOptions = {}
 ): StorageAdapter<T> {
-  const {
-    prefix = '',
-    serialize = JSON.stringify,
-    deserialize = JSON.parse
-  } = options;
+  const { prefix = '', serialize = JSON.stringify, deserialize = JSON.parse } = options;
 
   const getStorage = (): Storage | null => {
     if (!isBrowser) return null;
@@ -107,7 +103,7 @@ export function createWebStorageAdapter<T = unknown>(
 }
 
 export function createIndexedDBAdapter<T = unknown>(
-  dbName = 'pareesh-storage',
+  dbName = 'pareeshy-storage',
   storeName = 'keyval'
 ): StorageAdapter<T> {
   if (!isBrowser || typeof indexedDB === 'undefined') {

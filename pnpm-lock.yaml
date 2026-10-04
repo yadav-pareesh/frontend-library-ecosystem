@@ -235,6 +235,9 @@ importers:
       '@pareeshy/image-dimensions':
         specifier: workspace:*
         version: link:../packages/image-dimensions
+      '@pareeshy/internal-utils':
+        specifier: workspace:*
+        version: link:../packages/internal-utils
       '@pareeshy/react-confirm-action':
         specifier: workspace:*
         version: link:../packages/react-confirm-action

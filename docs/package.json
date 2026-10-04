@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
     "@pareeshy/auto-ellipsis": "workspace:*",
+    "@pareeshy/internal-utils": "workspace:*",
     "@pareeshy/browser-storage": "workspace:*",
     "@pareeshy/file-validator": "workspace:*",
     "@pareeshy/form-dirty-state": "workspace:*",

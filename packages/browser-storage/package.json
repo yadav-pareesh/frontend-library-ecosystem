@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/browser-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unified browser storage abstraction for localStorage, sessionStorage, and IndexedDB with typed schemas, custom serialization, and clean async API.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/browser-storage"
   },
-  "keywords": ["storage", "indexeddb", "localstorage", "sessionstorage", "typed-storage", "browser"],
+  "keywords": [
+    "storage",
+    "indexeddb",
+    "localstorage",
+    "sessionstorage",
+    "typed-storage",
+    "browser"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/use-persisted-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generic persisted React state hook supporting localStorage, sessionStorage, TTL expiration, and schema migrations.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-persisted-state"
   },
-  "keywords": ["react", "hooks", "persisted-state", "ttl", "migration", "storage", "expiry"],
+  "keywords": [
+    "react",
+    "hooks",
+    "persisted-state",
+    "ttl",
+    "migration",
+    "storage",
+    "expiry"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

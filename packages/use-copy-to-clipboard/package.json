@@ -1,15 +1,21 @@
 {
   "name": "@pareeshy/use-copy-to-clipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Robust React hook for copying text to clipboard with modern Clipboard API, textarea fallback, copied state, and configurable timeout.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-copy-to-clipboard"
   },
-  "keywords": ["react", "hooks", "clipboard", "copy", "copy-to-clipboard"],
+  "keywords": [
+    "react",
+    "hooks",
+    "clipboard",
+    "copy",
+    "copy-to-clipboard"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +26,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

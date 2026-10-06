@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/use-permission",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser Permissions API abstraction hook for React supporting camera, microphone, geolocation, notifications, and clipboard with graceful degradation.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-permission"
   },
-  "keywords": ["react", "hooks", "permissions", "permissions-api", "geolocation", "camera", "microphone"],
+  "keywords": [
+    "react",
+    "hooks",
+    "permissions",
+    "permissions-api",
+    "geolocation",
+    "camera",
+    "microphone"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

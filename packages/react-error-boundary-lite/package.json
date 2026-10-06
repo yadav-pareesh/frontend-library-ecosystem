@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/react-error-boundary-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra-lightweight, resilient React Error Boundary component with reset keys, retry handler, and render prop support.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/react-error-boundary-lite"
   },
-  "keywords": ["react", "error-boundary", "catch", "errors", "react-error-boundary", "resilience"],
+  "keywords": [
+    "react",
+    "error-boundary",
+    "catch",
+    "errors",
+    "react-error-boundary",
+    "resilience"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

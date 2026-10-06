@@ -1,15 +1,22 @@
 {
   "name": "@pareeshy/use-optimistic-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable optimistic UI workflow hook for React with automatic rollback on error, retry capability, and pending states.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/use-optimistic-action"
   },
-  "keywords": ["react", "hooks", "optimistic", "optimistic-ui", "rollback", "async-action"],
+  "keywords": [
+    "react",
+    "hooks",
+    "optimistic",
+    "optimistic-ui",
+    "rollback",
+    "async-action"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +27,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

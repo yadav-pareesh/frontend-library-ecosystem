@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/smart-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-speed client-side fuzzy search utility and React hook with scoring, keyword highlighting, recent history, and keyboard navigation.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/smart-search"
   },
-  "keywords": ["react", "search", "fuzzy-search", "scoring", "highlighting", "ranking", "filter"],
+  "keywords": [
+    "react",
+    "search",
+    "fuzzy-search",
+    "scoring",
+    "highlighting",
+    "ranking",
+    "filter"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",

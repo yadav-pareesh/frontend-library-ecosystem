@@ -1,15 +1,23 @@
 {
   "name": "@pareeshy/image-dimensions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Safe, lightweight image dimensions extractor for File, Blob, and image URL inputs in browsers with aspect ratio calculations.",
   "author": "Pareesh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pareesh/frontend-library-ecosystem.git",
+    "url": "https://github.com/yadav-pareesh/frontend-library-ecosystem.git",
     "directory": "packages/image-dimensions"
   },
-  "keywords": ["image", "dimensions", "width", "height", "aspect-ratio", "file", "blob"],
+  "keywords": [
+    "image",
+    "dimensions",
+    "width",
+    "height",
+    "aspect-ratio",
+    "file",
+    "blob"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,7 +28,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
